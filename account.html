@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- styling -->
+    <link rel="stylesheet" href="Swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/account.css" />
+
+    <!-- font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b353e23091.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- title -->
+    <title>Kodecamp Blog</title>
+  </head>
+  <body>
+    <!-- TopBar -->
+    <div id="top-bar" class="bg-light">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="text-dark mt-2" style="font-size: 15px">
+            YOUR NO.1 BLOG WEBSITE
+          </p>
+          <div class="sidelist">
+            <ul class="">
+              <li class="my-1 hov">
+                ENGLISH <i class="fa-solid fa-chevron-down sidedrop"></i>
+                <ul class="px-2 side-list-item bg-light">
+                  <li class="my-1">FRENCH</li>
+                  <li class="my-1">SPANISH</li>
+                </ul>
+              </li>
+            </ul>
+            <!-- <a class="btn dropdown-toggle" href="#">
+              ENGLISH
+            </a>
+            <ul class="">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End TopBar -->
+
+     <!-- NavBar -->
+  <section id="nav-bar" class="">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="#"><img src="img/account-page-image/logo.png" alt="" class="w-75 h-auto"></a>
+        <button class="navbar-toggler border-0" onclick="rotateChevron()" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-primary mx-2" href="home.html">Browse <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark mx-2" href="trending.html">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark mx-2" href="#popular">Popular</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark mx-2" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#latest-article">Latest Article</a></li>
+                <li><a class="dropdown-item" href="trending.html">Trending</a></li>
+                <li><a class="dropdown-item" href="#popular">Popular</a></li>
+                <li><a class="dropdown-item" href="#start-ups">Start Ups</a></li>
+                <li><a class="dropdown-item" href="#tech">Tech and Lifestyles</a></li>
+                <li><a class="dropdown-item" href="#business">Business</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark mx-2" href="#">Commuity</a>
+            </li>
+          </ul>
+          <div class="side d-flex">
+            <i class="fa-solid fa-bell fs-3 me-5 text-light open-modal-notify"></i>
+            <!-- <button class="btn btn-success open-modal py-2 px-2 border-0 rounded-3 text-light" style="font-size: 13px;">Get Started</button> -->
+            <div class="account">
+              <img src="img/account-page-image/Avatar.png" alt="" class="account-drop" style="width: 30px; height: 30px">
+              <div class="">
+                <ul class="account-list position-absolute mt-3 bg-white px-1 ps-1">
+                  <a href="account.html" class="text-decoration-none text-dark">
+                    <li class="">
+                      <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-3">
+                        <img src="img/account-page-image/logout.png" alt="" width="23px">
+                        <p class="py-3 fs-5 mb-0 me-auto ms-2">Account</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    </li>
+                  </a>
+                  <a href="bookmark.html" class="text-decoration-none text-dark">
+                    <li>
+                      <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-3">
+                        <img src="img/account-page-image/logout.png" alt="" width="23px">
+                        <p class="py-3 fs-5 mb-0 me-auto ms-2">Bookmark</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    </li>
+                  </a>
+                  <a href="account.html" class="text-decoration-none text-dark">
+                    <li>
+                      <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-3">
+                        <img src="img/account-page-image/settings.png" alt="" width="23px">
+                        <p class="py-3 fs-5 mb-0 me-auto ms-2">Settings</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    </li>
+                  </a>
+                    <li>
+                      <div class="d-flex justify-content-between align-items-center ps-4 pe-3 log-out open-modal-logout">
+                        <img src="img/account-page-image/logout.png" alt="" width="23px">
+                        <p class="py-3 fs-5 mb-0 me-auto ms-2">Log Out</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                      </div>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </nav>
+    </div>
+  </section>
+  <!-- End NavBar -->
+
+    <!-- start of hero section -->
+    <section>
+      <div class="account-hero">
+        <div class="text-center text-white">
+          <h2 class="fw-bold fs-2 pt-5 mb-5 account-heading">Account</h2>
+          <p class="py-3 fs-5 account-paragraph">
+            <span
+              ><a href="home.html" class="text-decoration-none text-white"
+                >HOME</a
+              ></span
+            >
+            »
+            <span
+              ><a href="account.html" class="text-decoration-none text-white">
+                MY ACCOUNT</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End of Hero section -->
+    <!-- Start of account user management -->
+
+    <section class="bg-light">
+      <div class="container py-5">
+        <div class="row justify-content-between">
+          <div class="col-md-4 col-sm-12 mb-3">
+            <div class="d-flex align-items-center bg-primary mb-4 rounded">
+              <div>
+                <img class="ps-2" src="img/account-page-image/Avatar.png" />
+              </div>
+              <div class="ps-3">
+                <h6 class="fs-6 text-white pt-3">Omorinsola Toluwalope</h6>
+                <p class="latest-article-size text-light">
+                  Omorinsolatoluwalope@gmail.com
+                </p>
+              </div>
+            </div>
+            <div
+              style="background-color: white"
+              class="d-flex align-items-center acc justify-content-between one border-bottom rounded account-select"
+            >
+              <p class="pt-3 ps-2">User Management</p>
+              <i class="bx bxs-chevron-right pe-3"></i>
+            </div>
+            <div
+              style="background-color: white"
+              class="d-flex align-items-center acc justify-content-between two border-bottom account-select"
+            >
+              <p class="pt-3 ps-2">Language Settings</p>
+              <i class="bx bxs-chevron-right pe-3"></i>
+            </div>
+            <div
+              style="background-color: white"
+              class="d-flex align-items-center acc justify-content-between three border-0 account-select rounded-bottom"
+            >
+              <p class="pt-3 ps-2">Notification Settings</p>
+              <i class="bx bxs-chevron-right pe-3"></i>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-sm-12 bg-white py-4 shadow ps-4 rounded user"
+          >
+            <h3 class="fw-bold val">User Management</h3>
+            <h5 class="fw-bold">Profile</h5>
+            <p class="latest-article-size">Name, Gender, Email address</p>
+            <form action="#">
+              <div class="w-75">
+                <label></label>
+                <input
+                  style="background-color: #e0e0e0"
+                  class="p-2 w-100 rounded border-0 text-black"
+                  type="text"
+                  placeholder="Omorinsola Toluwalope"
+                />
+              </div>
+              <div class="w-75">
+                <label></label>
+                <input
+                  style="background-color: #e0e0e0"
+                  class="p-2 w-100 rounded border-0 text-black"
+                  type="text"
+                  placeholder="Female"
+                />
+              </div>
+              <div class="mb-3 border-bottom pb-3 w-75">
+                <label></label>
+                <input
+                  style="background-color: #e0e0e0"
+                  class="p-2 w-100 rounded border-0 text-black"
+                  type="email"
+                  placeholder="Omorinsolatoluwalope@gmail.com"
+                />
+              </div>
+              <h6 class="fw-bold">Deactivate Account</h6>
+              <h6 class="account-paragraph2">
+                Deleting Your Account is Permanent
+              </h6>
+              <p class="latest-article-size">
+                If you deactivate your account, you will no longer have access
+                to articles on our blog
+              </p>
+              <button class="btn btn-primary p-1 latest-article-size custom-button">
+                Deactivate
+              </button>
+            </form>
+          </div>
+          <div
+            class="col-md-6 col-sm-12 bg-white py-4 shadow ps-4 rounded hidden lang"
+          >
+            <div class="card border-0 account-list p-3 mb-5">
+              <h4 class="val">Language Settings</h4>
+              <ul class="p-0 m-0">
+                <div
+                  class="show-lang border-bottom d-flex justify-content-between align-items-center"
+                  data-switcher
+                  data-tab="1"
+                >
+                  <li class="ps-0 m-0 eng active-">English (UK)</li>
+                  <i class="fa-solid fa-check active-" data-page="1"></i>
+                </div>
+                <div
+                  class="show-lang border-bottom d-flex justify-content-between align-items-center"
+                  data-switcher
+                  data-tab="2"
+                >
+                  <li class="ps-0 m-0 eng">English (British)</li>
+                  <i class="fa-solid fa-check hidden" data-page="2"></i>
+                </div>
+                <div
+                  class="show-lang border-bottom d-flex justify-content-between align-items-center"
+                  data-switcher
+                  data-tab="3"
+                >
+                  <li class="ps-0 m-0 eng">Francais</li>
+                  <i class="fa-solid fa-check hidden" data-page="3"></i>
+                </div>
+                <div
+                  class="show-lang d-flex justify-content-between align-items-center"
+                  data-switcher
+                  data-tab="4"
+                >
+                  <li class="ps-0 m-0 eng">Spanish</li>
+                  <i class="fa-solid fa-check hidden" data-page="4"></i>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-sm-12 bg-white py-2 shadow ps-4 mb-5 rounded hidden notification-set"
+          >
+            <div class="card border-0 account-list p-3 mb-5">
+              <h4 class="val ms-4 mb-2">Notification Settings</h4>
+              <h5 class="ms-4 mb-3">Account</h5>
+              <div class="form-check form-switch ms-5 mb-3">
+                <input
+                  class="form-check-input fs-4"
+                  type="checkbox"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label fs-4"
+                  for="flexSwitchCheckDefault"
+                  >Lorem ipsum, dolor sit amet</label
+                >
+              </div>
+              <div class="form-check form-switch ms-5 mb-3">
+                <input
+                  class="form-check-input fs-4"
+                  type="checkbox"
+                  id="flexSwitchCheckChecked"
+                  checked
+                />
+                <label
+                  class="form-check-label fs-4"
+                  for="flexSwitchCheckChecked"
+                  >Lorem ipsum, dolor sit amet</label
+                >
+              </div>
+              <div class="form-check form-switch ms-5 mb-3">
+                <input
+                  class="form-check-input fs-4"
+                  type="checkbox"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label fs-4"
+                  for="flexSwitchCheckDefault"
+                  >Lorem ipsum, dolor sit amet</label
+                >
+              </div>
+              <div class="form-check form-switch ms-5 mb-3">
+                <input
+                  class="form-check-input fs-4"
+                  type="checkbox"
+                  id="flexSwitchCheckChecked"
+                  checked
+                />
+                <label
+                  class="form-check-label fs-4"
+                  for="flexSwitchCheckChecked"
+                  >Lorem ipsum, dolor sit amet</label
+                >
+              </div>
+              <div class="form-check form-switch ms-5 mb-3">
+                <input
+                  class="form-check-input fs-4"
+                  type="checkbox"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label fs-4"
+                  for="flexSwitchCheckDefault"
+                  >Lorem ipsum, dolor sit amet</label
+                >
+              </div>
+              <div class="form-check form-switch ms-5 mb-3">
+                <input
+                  class="form-check-input fs-4"
+                  type="checkbox"
+                  id="flexSwitchCheckChecked"
+                  checked
+                />
+                <label
+                  class="form-check-label fs-4"
+                  for="flexSwitchCheckChecked"
+                  >Lorem ipsum, dolor sit amet</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Newsletter Section -->
+    <section
+      id="newsletter"
+      style="
+        background-image: url(img/account-page-image/footer-image.png);
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div class="">
+        <div class="row py-5 w-100">
+          <div class="col-md-8 mx-auto pt-4">
+            <div class="hero-text text-center">
+              <h1 class="text-light">SUBSCRIBE TO OUR NEWSLETTER</h1>
+              <p class="my-4" style="color: #e0e0e0da">
+                Get updates on new articles and blogs
+              </p>
+              <div
+                class="input-box d-flex justify-content-between align-items-center w-75 border py-1 border-light px-1 mx-auto"
+              >
+                <input
+                  type="text"
+                  class="form-control w-100 bg-transparent border-0 text-light"
+                  placeholder="&#xf0e0; Enter email...."
+                  style="
+                    font-family: FontAwesome, Arial;
+                    font-style: normal;
+                    font-size: 12px;
+                  "
+                />
+                <i
+                  class="fa-solid fa-arrow-right fs-4 text-light text-light"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Newsletter Section -->
+
+  
+
+
+  <!-- Start of Notification Modal -->
+  <section class="popup-notify hidden-notify">
+    <div class="popup-content-notify  hidden-notify">
+      <div class="popup-content-container p-2 d-flex flex-column">
+        <div class="ms-auto">
+          <button class="close-modal-notify border-0">&times;</button>
+        </div>
+        <div class="notification">
+          <div class="notification-text">
+            <p class="text-start fw-bold">Notification</p>
+            <p class="text-end markall" style="font-size: 10px;">Mark all as read</p>
+          </div>
+          <span class="notification-details">
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class='overlay-notify hidden-notify'></div>
+  </section>
+  <!-- End of Notification Modal -->
+
+  <!-- Start of logout Modal -->
+  <section class="popup-logout hidden-logout">
+    <div class="popup-content-logout p-5 hidden-logout">
+      <div class="justify content-center d-flex flex-column">
+        <div class="confirmation">
+          <div class="col-12 col-md-6 col-lg-3 mx-auto">
+            <div class="card p-3 text-center">
+              <button class="close-modal-logout border-0 text-end bg-transparent fs-5">&times;</button>
+              <p>Are you sure you want to logout?</p>
+              <div class="mt-3 d-flex justify-content-between">
+                <a href="home.html">
+                  <button class="btn btn-danger">Yes</button>
+                </a>
+                <button class="btn btn-success close-modal-logout">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='overlay-logout hidden-logout'></div>
+  </section>
+  <!-- End of logout Modal -->
+
+    <!-- Start of Footer -->
+    <section id="footer" class="py-5 py-5 footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-12 mx-auto mb-4">
+            <div class="card bg-transparent border-0">
+              <img
+                src="img/account-page-image/logo.png"
+                alt=""
+                class="w-25 h-25 mb-2"
+              />
+              <p class="text-light">
+                <i class="fa-solid fa-phone"></i> +(234) 810 950 7906
+              </p>
+              <p class="text-light">
+                <i class="fa-solid fa-envelope"></i> kodeblogteam@gmail.com
+              </p>
+              <p class="text-light">
+                <i class="fa-solid fa-at"></i> 38 Afaha Uqua Road, Eket,
+                Akwa-Ibom State.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-6 mx-auto">
+            <div class="card bg-transparent border-0">
+              <h5 class="text-light">USEFUL LINKS</h5>
+              <ul class="list-group list-group-flush">
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="home.html" class="text-light text-decoration-none">Home</a>
+                </li>
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="#" class="text-light text-decoration-none"
+                    >About Us</a
+                  >
+                </li>
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="#" class="text-light text-decoration-none"
+                    >Tech and Lifestyles</a
+                  >
+                </li>
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="#" class="text-light text-decoration-none"
+                    >Business</a
+                  >
+                </li>
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="trending.html" class="text-light text-decoration-none"
+                    >Trending</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-6 mx-auto">
+            <div class="card bg-transparent border-0">
+              <h5 class="text-light">QUICK LINKS</h5>
+              <ul class="list-group list-group-flush">
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="#" class="text-light text-decoration-none"
+                    >Web Development</a
+                  >
+                </li>
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="#" class="text-light text-decoration-none">UI/UX</a>
+                </li>
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="#" class="text-light text-decoration-none"
+                    >Andriod Development</a
+                  >
+                </li>
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="#" class="text-light text-decoration-none"
+                    >Card Learners</a
+                  >
+                </li>
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="#" class="text-light text-decoration-none"
+                    >Backend Development</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12 mx-auto mt-4">
+            <div class="card bg-transparent border-0">
+              <h5 class="text-light">FOLLOW US ON</h5>
+              <ul class="list-group list-group-flush ">
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="https://facebook.com"
+                  target="_blank"  class="text-light text-decoration-none"
+                    ><i class="fa-brands fa-facebook"></i> Facebook</a
+                  >
+                </li>
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="https://twitter.com"
+                  target="_blank" class="text-light text-decoration-none"
+                    ><i class="fa-brands fa-twitter"></i> Twitter</a
+                  >
+                </li>
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="https://instagram.com"
+                  target="_blank" class="text-light text-decoration-none"
+                    ><i class="fa-brands fa-instagram"></i> Instagram</a
+                  >
+                </li>
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="https://linkedin.com"
+                  target="_blank" class="text-light text-decoration-none"
+                    ><i class="fa-brands fa-linkedin"></i> Linkedin</a
+                  >
+                </li>
+                <li
+                  class="list-group-item text-light bg-transparent border-0 ps-0"
+                >
+                  <a href="https://telegram.com"
+                  target="_blank" class="text-light text-decoration-none"
+                    ><i class="fa-brands fa-telegram"></i> Telegram</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <p class="text-light">Copyright &copy; 2022 KodeBlog</p>
+        </div>
+      </div>
+    </section>
+    <!-- End of Footer -->
+
+    <!-- Start of Scripts -->
+
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/account.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

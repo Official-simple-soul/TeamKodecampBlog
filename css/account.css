@@ -1,0 +1,63 @@
+@import url(style.css);
+
+.account-hero {
+  background-image: url(../img/account-page-image/Rectangle\ 1473.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: -1rem;
+}
+
+.account-heading {
+  font-style: bold;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  line-height: 1.6;
+}
+
+.account-paragraph {
+  background-color: rgba(0, 0, 0, 0.202);
+  font-weight: 600;
+  font-size: 10px !important;
+}
+
+.account-paragraph2 {
+  font-size: 0.8rem !important;
+}
+.account-select {
+  cursor: pointer;
+}
+
+.account-select:hover,
+.account-select:active {
+  background-color: #cfe2ff !important;
+}
+
+.account-list ul li{
+  list-style: none;
+  /* border: none; */
+  /* border-bottom: 2px solid #e0dede; */
+  padding: 12px;
+  margin: 10px;
+}
+
+.show-lang-show {
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.show-lang:hover {
+  cursor: pointer;
+  background-color: #cddaecd2;
+  padding: 0 8px;
+}
+
+.col {
+  color: blue;
+}
+
+.active- {
+  color: blue;
+}

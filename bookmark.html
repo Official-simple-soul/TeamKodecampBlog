@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- styling -->
+  <link rel="stylesheet" href="Swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bookmark.css" />
+  <link rel="stylesheet" href="css/landing-page.css" />
+  <link rel="stylesheet" href="css/style.css"/>
+ 
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- font Awesome -->
+  <script src="https://kit.fontawesome.com/b353e23091.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- aos animate -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- title -->
+  <title>Kodecamp Blog</title>
+</head>
+
+<body>
+  <!-- TopBar -->
+  <div id="top-bar" class="bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <p class="text-dark mt-2" style="font-size: 15px;">YOUR NO.1 BLOG WEBSITE</p>
+        <div class="sidelist">
+          <ul class="">
+            <li class="my-1 hov">ENGLISH <i class="fa-solid fa-chevron-down sidedrop"></i>
+              <ul class="px-2 side-list-item bg-light">
+                <li class="my-1">FRENCH</li>
+                <li class="my-1">SPANISH</li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <a class="btn dropdown-toggle" href="#">
+            ENGLISH
+          </a>
+          <ul class="">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End TopBar -->
+
+  <!-- NavBar -->
+  <section id="nav-bar" class="">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="#"><img src="img/landing-page-image/logo.png" alt="" class="w-75 h-auto"></a>
+        <button class="navbar-toggler border-0" onclick="rotateChevron()" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-primary mx-2" href="home.html">Browse <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark mx-2" href="#trending">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark mx-2" href="#popular">Popular</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark mx-2" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#latest-article">Latest Article</a></li>
+                <li><a class="dropdown-item" href="#trending">Trending</a></li>
+                <li><a class="dropdown-item" href="#popular">Popular</a></li>
+                <li><a class="dropdown-item" href="#start-ups">Start Ups</a></li>
+                <li><a class="dropdown-item" href="#tech">Tech and Lifestyles</a></li>
+                <li><a class="dropdown-item" href="#business">Business</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark mx-2" href="#">Commuity</a>
+            </li>
+          </ul>
+          <div class="side d-flex">
+            <i class="fa-solid fa-bell fs-3 me-5 text-light open-modal-notify"></i>
+            <!-- <button class="btn btn-success open-modal py-2 px-2 border-0 rounded-3 text-light" style="font-size: 13px;">Get Started</button> -->
+            <div class="account">
+              <img src="img/landing-page-image/Avatar.png" alt="" class="account-drop" style="width: 30px; height: 30px">
+              <div class="">
+                <ul class="account-list position-absolute mt-3 bg-white px-1 ps-1">
+                  <a href="account-user.html" class="text-decoration-none text-dark">
+                    <li class="">
+                      <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-3">
+                        <img src="img/landing-page-image/logout.png" alt="" width="23px">
+                        <p class="py-3 fs-5 mb-0 me-auto ms-2">Account</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    </li>
+                  </a>
+                  <a href="/kodecamp-blog-frontend/bookmark.html" class="text-decoration-none text-dark">
+                    <li class="active">
+                      <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-3">
+                        <i class="fa-regular fa-bookmark fs-4"></i>
+                        <p class="py-3 fs-5 mb-0 me-auto ms-2">Bookmark</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    </li>
+                  </a>
+                  <a href="account-user.html" class="text-decoration-none text-dark">
+                    <li>
+                      <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-3">
+                        <img src="img/landing-page-image/settings.png" alt="" width="23px">
+                        <p class="py-3 fs-5 mb-0 me-auto ms-2">Settings</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    </li>
+                  </a>
+                    <li>
+                      <div class="d-flex justify-content-between align-items-center ps-4 pe-3 log-out open-modal-logout">
+                        <img src="img/landing-page-image/logout.png" alt="" width="23px">
+                        <p class="py-3 fs-5 mb-0 me-auto ms-2">Log Out</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                      </div>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </nav>
+    </div>
+  </section>
+  <!-- End NavBar -->
+
+  <!-- Start of Notification Modal -->
+  <section class="popup-notify hidden-notify">
+    <div class="popup-content-notify  hidden-notify">
+      <div class="popup-content-container p-2 d-flex flex-column">
+        <div class="ms-auto">
+          <button class="close-modal-notify border-0">&times;</button>
+        </div>
+        <div class="notification">
+          <div class="notification-text">
+            <p class="text-start fw-bold">Notification</p>
+            <p class="text-end markall" style="font-size: 10px;">Mark all as read</p>
+          </div>
+          <span class="notification-details">
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class='overlay-notify hidden-notify'></div>
+  </section>
+  <!-- End of Notification Modal -->
+
+  <!-- Start of logout Modal -->
+  <section class="popup-logout hidden-logout">
+    <div class="popup-content-logout p-5 hidden-logout">
+      <div class="justify content-center d-flex flex-column">
+        <div class="confirmation">
+          <div class="col-12 col-md-6 col-lg-3 mx-auto">
+            <div class="card p-3 text-center">
+              <button class="close-modal-logout border-0 text-end bg-transparent fs-5">&times;</button>
+              <p>Are you sure you want to logout?</p>
+              <div class="mt-3 d-flex justify-content-between">
+                <a href="index.html">
+                  <button class="btn btn-danger">Yes</button>
+                </a>
+                <button class="btn btn-success close-modal-logout">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='overlay-logout hidden-logout'></div>
+  </section>
+  <!-- End of logout Modal -->
+
+  <!-- Start of Hero section-->
+  <section id="bookmark-hero" class="pt-5"
+  style="background-image: url(img/bookmark-tech-1-page-image/blog\ image.png); background-position: center; background-size: cover;">
+  <div class="bookmark">
+      <h1 class="fw-bold text-light py-5 text-center">BOOKMARK</h1>
+  </div>
+  <div class="home-section"
+      style="background-image: url(img/bookmark-tech-1-page-image/blog\ image.png); background-position: center; background-size: cover;"
+      >
+      <div class="home-links d-flex justify-content-center">
+          <a href="index.html" class="text-decoration-none">
+              <h4 class=" pt-5  text-center"> HOME » </h4>
+          </a>
+          <a href="bookmark.html" class="text-decoration-none">
+              <h4 class=" pt-5  text-center"> BOOKMARK</h4>
+          </a>
+      </div>
+  </div>
+</section>
+  <!-- End of Hero section -->
+
+  <!-- Start of Bookmark Section -->
+  <section class="bg-light">
+    <div class="container py-5 ">
+        <h4 class="fw-bolder bookmark-title pb-3 ps-5"> 
+          <span class="icons-for-bookmark pe-5 me-5 justify-content-end animate__animated animate__fadeInDown animate__faster">
+            <i class="fa-solid fa-magnifying-glass px-3"></i>
+            <i class="fa-light fa-grid-2 px-3 toggle-function-solid" onclick="toggleSolid()"></i>
+            <i class="fa-light fa-bars-progress px-3 toggle-function-regular" onclick="toggleRegular()"></i>
+          </span>
+            Bookmarks
+        </h4>
+        
+      <div class="row justify-content-between justify-content-xl-around">
+        <!-- Add New Collection trigger -->
+        
+        <div class="col-lg-4 col-md-4 col-12  collection-boxes">
+          <ul class="bookmark-list ps-0">
+            <div class="text-center bg-primary py-2 mb-4 rounded">
+              <div class="collection-title" >
+                <h6 class="fs-6 text-white pt-2 " >Add New Collection <i class="fa-light fa-plus fs-5 fw-normal"></i> </h6>
+              </div>
+            </div>
+          
+            <li>
+              <div class="d-flex align-items-center justify-content-between border rounded bg-white account-select animate__animated animate__flipInX animate__faster collection">
+                <p class="pt-3 ps-2">All Bookmarks</p>
+                <i class="fa-solid fa-chevron-right pe-3"></i>
+              </div>
+            </li>
+            <li>
+              <div id="dsgn-1" class="d-flex align-items-center 
+              justify-content-between border account-select  
+              animate__animated animate__flipInX animate__faster collection" onclick="toggleopenDsgn1()">
+                <p class="pt-3 ps-2">Design</p>
+                <i class="fa-solid fa-chevron-right pe-3"></i>
+              </div>
+            </li>
+            <li>
+              <span
+              id= "tech-1"class="d-flex align-items-center 
+              justify-content-between border account-select 
+              rounded-bottom animate__animated animate__
+              flipInX animate__faster collection" onclick="toggleopenTech1()" 
+            >
+                <p class="pt-3 ps-2 ">Technology</p>
+                <i class="fa-solid fa-chevron-right pe-3 "></i>
+              </span>
+            </li>
+            <li>
+              <div
+              class="d-flex align-items-center justify-content-between border  bg-white account-select rounded-bottom  animate__animated animate__flipInX animate__faster  collection "
+            >
+              <p class="pt-3 ps-2">Business</p>
+              <i class="fa-solid fa-chevron-right pe-3"></i>
+            </div>
+            </li>
+            <li>
+              <div
+              class="d-flex align-items-center justify-content-between border  bg-white account-select rounded-bottom  animate__animated animate__flipInX animate__faster collection "
+            >
+              <p class="pt-3 ps-2">Blockchain</p>
+              <i class="fa-solid fa-chevron-right pe-3"></i>
+            </div>
+            </li>
+            <li>
+              <div
+              class="d-flex align-items-center justify-content-between border  bg-white account-select rounded-bottom animate__animated animate__flipInX animate__faster collection " 
+            >
+              <p class="pt-3 ps-2">Start Ups</p>
+              <i class="fa-solid fa-chevron-right pe-3"></i>
+            </div>
+            </li>
+            <li>
+              <div
+              class="d-flex align-items-center justify-content-between border  bg-white account-select rounded-bottom animate__animated animate__flipInX animate__faster collection "  
+            >
+              <p class="pt-3 ps-2">Development</p>
+              <i class="fa-solid fa-chevron-right pe-3"></i>
+            </div>
+            </li>
+            <li>
+              <div
+              class="d-flex align-items-center justify-content-between border  bg-white account-select rounded-bottom animate__animated animate__flipInX animate__faster collection"
+            >
+              <p class="pt-3 ps-2">Notification Settings</p>
+              <i class="fa-solid fa-chevron-right pe-3"></i>
+            </div>
+            </li>
+          </ul>
+        </div>
+
+        <!--Start of the new collection modal-->
+        <div class="bg-modal">
+          <div class="modal-container py-4 d-flex flex-column align-items-center">
+            <div class="modal-head border-bottom d-flex justify-content-center">
+              <h5 class="fw-bold">NEW COLLECTION</h5>
+            </div>
+            <div class="modal-input mb-5">
+              <p>Name</p>
+              <input type="text" class="p-2 modal-input-value">
+            </div>
+            <div>
+              <button type="button" class="btn btn-outline-primary me-4 cancel">Cancel</button>
+              <button type="button" class="btn btn-primary create">Create</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Technology Bookmark Start -->
+        <section id="Technology-1" class="Technology-1 pb-3 pt-5 pt-sm-0 col-12 col-md-6 col-lg-8  animate__animated animate__zoomIn">
+          <div class="container technology-container px-1">
+            <div class="col-md-12 d-none list-view justify-content-end">
+              <div class="card border-0 bg-transparent">
+                <div class="row shadow w-100" style="background-color: white">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card bg-transparent border-0 rounded-left">
+                      <img src="img/bookmark-tech-1-page-image/Image.png" alt="" class="image-fluid zoom" height="285px" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-size: 12px">
+                          Career in Tech
+                        </h5>
+                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
+                        <h6 class="my-1">
+                          The title of the article or heading should be here
+                        </h6>
+                        <p class="card-text text-muted" style="font-size: 10px">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Excepturi eligendi deleniti omnis exercitationem quia?
+                          Doloremque eum sunt
+                        </p>
+                        <div class="d-flex flex-wrap">
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                        </div>
+                      </div>
+                      <div
+                      class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                    >
+                      <div class="first-right d-flex align-items-center py-1">
+                        <div class="d-flex me-4 align-items-center">
+                          <i
+                            class="fa-solid fa-hands-clapping me-1 fs-5"
+                            id="change"
+                          ></i>
+                          <h6 class="mb-0" id="count">10</h6>
+                        </div>
+                         <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                    <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                      </div>
+                      <a href="#" class="text-decoration-none"
+                        ><div class="d-flex">
+                          <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                            <a href="article.html" class="text-decoration-none">Read more</a>
+                          </p>
+                          <i
+                            class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                          ></i></div
+                      ></a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3 shadow w-100" style="background-color: white">
+                  <div class="col-lg-6 col-md-6 border-0">
+                    <div class="card borbg-transparent der-0 rounded-left">
+                      <img src="img/bookmark-tech-1-page-image/Image (1).png" alt="" class="image-fluid zoom" height="285px" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-size: 12px">
+                          Career in Tech
+                        </h5>
+                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
+                        <h6 class="my-1">
+                          The title of the article or heading should be here
+                        </h6>
+                        <p class="card-text text-muted" style="font-size: 10px">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Excepturi eligendi deleniti omnis exercitationem quia?
+                          Doloremque eum sunt
+                        </p>
+                        <div class="d-flex flex-wrap">
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                        </div>
+                      </div>
+                      <div
+                      class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                    >
+                      <div class="first-right d-flex align-items-center py-1">
+                        <div class="d-flex me-4 align-items-center">
+                          <i
+                            class="fa-solid fa-hands-clapping me-1 fs-5"
+                            id="change"
+                          ></i>
+                          <h6 class="mb-0" id="count">10</h6>
+                        </div>
+                         <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                    <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                      </div>
+                      <a href="#" class="text-decoration-none"
+                        ><div class="d-flex">
+                          <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                            <a href="article.html" class="text-decoration-none">Read more</a>
+                          </p>
+                          <i
+                            class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                          ></i></div
+                      ></a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3 shadow w-100" style="background-color: white">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card borbg-transparent der-0 rounded-left">
+                      <img src="img/bookmark-tech-1-page-image/Image (2).png" alt="" class="image-fluid zoom" height="285px" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-size: 12px">
+                          Career in Tech
+                        </h5>
+                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
+                        <h6 class="my-1">
+                          The title of the article or heading should be here
+                        </h6>
+                        <p class="card-text text-muted" style="font-size: 10px">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Excepturi eligendi deleniti omnis exercitationem quia?
+                          Doloremque eum sunt
+                        </p>
+                        <div class="d-flex flex-wrap">
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                        </div>
+                      </div>
+                      <div
+                      class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                    >
+                      <div class="first-right d-flex align-items-center py-1">
+                        <div class="d-flex me-4 align-items-center">
+                          <i
+                            class="fa-solid fa-hands-clapping me-1 fs-5"
+                            id="change"
+                          ></i>
+                          <h6 class="mb-0" id="count">10</h6>
+                        </div>
+                         <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                    <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                      </div>
+                      <a href="#" class="text-decoration-none"
+                        ><div class="d-flex">
+                          <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                            <a href="article.html" class="text-decoration-none">Read more</a>
+                          </p>
+                          <i
+                            class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                          ></i></div
+                      ></a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3 shadow w-100" style="background-color: white">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card borbg-transparent der-0 rounded-left">
+                      <img src="img/bookmark-tech-1-page-image/Image (3).png" alt="" class="image-fluid zoom" height="285px" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-size: 12px">
+                          Career in Tech
+                        </h5>
+                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
+                        <h6 class="my-1">
+                          The title of the article or heading should be here
+                        </h6>
+                        <p class="card-text text-muted" style="font-size: 10px">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Excepturi eligendi deleniti omnis exercitationem quia?
+                          Doloremque eum sunt
+                        </p>
+                        <div class="d-flex flex-wrap">
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                        </div>
+                      </div>
+                      <div
+                      class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                    >
+                      <div class="first-right d-flex align-items-center py-1">
+                        <div class="d-flex me-4 align-items-center">
+                          <i
+                            class="fa-solid fa-hands-clapping me-1 fs-5"
+                            id="change"
+                          ></i>
+                          <h6 class="mb-0" id="count">10</h6>
+                        </div>
+                         <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                    <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                      </div>
+                      <a href="#" class="text-decoration-none"
+                        ><div class="d-flex">
+                          <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                            <a href="article.html" class="text-decoration-none">Read more</a>
+                          </p>
+                          <i
+                            class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                          ></i></div
+                      ></a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row grid-view">
+              <div class="  pb-5 grid-box">
+                <div class="card border-0 shadow">
+                  <div class="card rounded-top border-0">
+                    <img src="img/bookmark-tech-1-page-image/Image.png" alt="" class="image-fluid zoom" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title mb-1">Career in Tech</h5>
+                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
+                    <h6 class="my-2">
+                      The title of the article or heading should be here
+                    </h6>
+                    <p class="card-text text-muted" style="font-size: 12px">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Excepturi eligendi deleniti omnis exercitationem quia?
+                      Doloremque eum sunt
+                    </p>
+                    <div class="d-flex flex-wrap">
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                    </div>
+                  </div>
+                  <div
+                  class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                >
+                  <div class="first-right d-flex align-items-center py-1">
+                    <div class="d-flex me-4 align-items-center">
+                      <i
+                        class="fa-solid fa-hands-clapping me-1 fs-5"
+                        id="change"
+                      ></i>
+                      <h6 class="mb-0" id="count">10</h6>
+                    </div>
+                     <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                  </div>
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                        <a href="article.html" class="text-decoration-none">Read more</a>
+                      </p>
+                      <i
+                        class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                      ></i></div
+                  ></a>
+                </div>
+                </div>
+              </div>
+              <div class="  pb-5 grid-box">
+                <div class="card border-0 shadow">
+                  <div class="card rounded-top border-0">
+                    <img src="img/bookmark-tech-1-page-image/Image (1).png" alt="" class="image-fluid zoom" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title mb-1">Career in Tech</h5>
+                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
+                    <h6 class="my-2">
+                      The title of the article or heading should be here
+                    </h6>
+                    <p class="card-text text-muted" style="font-size: 12px">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Excepturi eligendi deleniti omnis exercitationem quia?
+                      Doloremque eum sunt
+                    </p>
+                    <div class="d-flex flex-wrap">
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                    </div>
+                  </div>
+                  <div
+                  class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                >
+                  <div class="first-right d-flex align-items-center py-1">
+                    <div class="d-flex me-4 align-items-center">
+                      <i
+                        class="fa-solid fa-hands-clapping me-1 fs-5"
+                        id="change"
+                      ></i>
+                      <h6 class="mb-0" id="count">10</h6>
+                    </div>
+                     <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                  </div>
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                        <a href="article.html" class="text-decoration-none">Read more</a>
+                      </p>
+                      <i
+                        class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                      ></i></div
+                  ></a>
+                </div>
+                </div>
+              </div>
+              <div class=" pb-5  grid-box">
+                <div class="card border-0 shadow">
+                  <div class="card rounded-top border-0">
+                    <img src="img/bookmark-tech-1-page-image/Image (2).png" alt="" class="image-fluid zoom" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title mb-1">Career in Tech</h5>
+                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
+                    <h6 class="my-2">
+                      The title of the article or heading should be here
+                    </h6>
+                    <p class="card-text text-muted" style="font-size: 12px">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Excepturi eligendi deleniti omnis exercitationem quia?
+                      Doloremque eum sunt
+                    </p>
+                    <div class="d-flex flex-wrap">
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                    </div>
+                  </div>
+                  <div
+                  class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                >
+                  <div class="first-right d-flex align-items-center py-1">
+                    <div class="d-flex me-4 align-items-center">
+                      <i
+                        class="fa-solid fa-hands-clapping me-1 fs-5"
+                        id="change"
+                      ></i>
+                      <h6 class="mb-0" id="count">10</h6>
+                    </div>
+                     <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                  </div>
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                        <a href="article.html" class="text-decoration-none">Read more</a>
+                      </p>
+                      <i
+                        class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                      ></i></div
+                  ></a>
+                </div>
+                </div>
+              </div>
+              <div class="grid-box">
+                <div class="card border-0 shadow">
+                  <div class="card rounded-top border-0">
+                    <img src="img/bookmark-tech-1-page-image/Image (3).png" alt="" class="image-fluid zoom" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title mb-1">Career in Tech</h5>
+                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
+                    <h6 class="my-2">
+                      The title of the article or heading should be here
+                    </h6>
+                    <p class="card-text text-muted" style="font-size: 12px">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Excepturi eligendi deleniti omnis exercitationem quia?
+                      Doloremque eum sunt
+                    </p>
+                    <div class="d-flex flex-wrap">
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                    </div>
+                  </div>
+                  <div
+                  class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                >
+                  <div class="first-right d-flex align-items-center py-1">
+                    <div class="d-flex me-4 align-items-center">
+                      <i
+                        class="fa-solid fa-hands-clapping me-1 fs-5"
+                        id="change"
+                      ></i>
+                      <h6 class="mb-0" id="count">10</h6>
+                    </div>
+                     <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                  </div>
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                        <a href="article.html" class="text-decoration-none">Read more</a>
+                      </p>
+                      <i
+                        class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                      ></i></div
+                  ></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Technology Bookmark End -->
+
+        <!-- Design Bookmark Start-->
+        <section id="Design-1" class="Design-1 bg-white col-lg-8 col-md-8 col-12  pb-3 pt-5 pt-sm-0  animate__animated animate__zoomIn">
+          <div class="container design-container px-1">
+            <div class="col-md-12 d-none list-view justify-content-end">
+              <div class="card border-0 bg-transparent">
+                <div class="row shadow w-100" style="background-color: white">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card bg-transparent border-0 rounded-left">
+                      <img src="img/bookmark-tech-1-page-image/design-book.png" alt="" class="image-fluid zoom" height="285px" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-size: 12px">
+                          Career in Tech
+                        </h5>
+                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
+                        <h6 class="my-1">
+                          The title of the article or heading should be here
+                        </h6>
+                        <p class="card-text text-muted" style="font-size: 10px">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Excepturi eligendi deleniti omnis exercitationem quia?
+                          Doloremque eum sunt
+                        </p>
+                        <div class="d-flex flex-wrap">
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                        </div>
+                      </div>
+                      <div
+                      class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                    >
+                      <div class="first-right d-flex align-items-center py-1">
+                        <div class="d-flex me-4 align-items-center">
+                          <i
+                            class="fa-solid fa-hands-clapping me-1 fs-5"
+                            id="change"
+                          ></i>
+                          <h6 class="mb-0" id="count">10</h6>
+                        </div>
+                         <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                    <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                      </div>
+                      <a href="#" class="text-decoration-none"
+                        ><div class="d-flex">
+                          <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                            <a href="article.html" class="text-decoration-none">Read more</a>
+                          </p>
+                          <i
+                            class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                          ></i></div
+                      ></a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3 shadow w-100" style="background-color: white">
+                  <div class="col-lg-6 col-md-6 border-0">
+                    <div class="card borbg-transparent der-0 rounded-left">
+                      <img src="img/bookmark-tech-1-page-image/design-vr.png" alt="" class="image-fluid zoom" height="285px" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-size: 12px">
+                          Career in Tech
+                        </h5>
+                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
+                        <h6 class="my-1">
+                          The title of the article or heading should be here
+                        </h6>
+                        <p class="card-text text-muted" style="font-size: 10px">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Excepturi eligendi deleniti omnis exercitationem quia?
+                          Doloremque eum sunt
+                        </p>
+                        <div class="d-flex flex-wrap">
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                        </div>
+                      </div>
+                      <div
+                  class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                >
+                  <div class="first-right d-flex align-items-center py-1">
+                    <div class="d-flex me-4 align-items-center">
+                      <i
+                        class="fa-solid fa-hands-clapping me-1 fs-5"
+                        id="change"
+                      ></i>
+                      <h6 class="mb-0" id="count">10</h6>
+                    </div>
+                     <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                  </div>
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                        <a href="article.html" class="text-decoration-none">Read more</a>
+                      </p>
+                      <i
+                        class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                      ></i></div
+                  ></a>
+                </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3 shadow w-100" style="background-color: white">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card borbg-transparent der-0 rounded-left">
+                      <img src="img/bookmark-tech-1-page-image/design-pc.png" alt="" class="image-fluid zoom" height="285px" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-size: 12px">
+                          Career in Tech
+                        </h5>
+                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
+                        <h6 class="my-1">
+                          The title of the article or heading should be here
+                        </h6>
+                        <p class="card-text text-muted" style="font-size: 10px">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Excepturi eligendi deleniti omnis exercitationem quia?
+                          Doloremque eum sunt
+                        </p>
+                        <div class="d-flex flex-wrap">
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                        </div>
+                      </div>
+                      <div
+                  class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                >
+                  <div class="first-right d-flex align-items-center py-1">
+                    <div class="d-flex me-4 align-items-center">
+                      <i
+                        class="fa-solid fa-hands-clapping me-1 fs-5"
+                        id="change"
+                      ></i>
+                      <h6 class="mb-0" id="count">10</h6>
+                    </div>
+                     <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                  </div>
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                        <a href="article.html" class="text-decoration-none">Read more</a>
+                      </p>
+                      <i
+                        class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                      ></i></div
+                  ></a>
+                </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3 shadow w-100" style="background-color: white">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card borbg-transparent der-0 rounded-left">
+                      <img src="img/bookmark-tech-1-page-image/design-vr.png" alt="" class="image-fluid zoom" height="285px" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-size: 12px">
+                          Career in Tech
+                        </h5>
+                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
+                        <h6 class="my-1">
+                          The title of the article or heading should be here
+                        </h6>
+                        <p class="card-text text-muted" style="font-size: 10px">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Excepturi eligendi deleniti omnis exercitationem quia?
+                          Doloremque eum sunt
+                        </p>
+                        <div class="d-flex flex-wrap">
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                        </div>
+                      </div>
+                      <div
+                  class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                >
+                  <div class="first-right d-flex align-items-center py-1">
+                    <div class="d-flex me-4 align-items-center">
+                      <i
+                        class="fa-solid fa-hands-clapping me-1 fs-5"
+                        id="change"
+                      ></i>
+                      <h6 class="mb-0" id="count">10</h6>
+                    </div>
+                     <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                  </div>
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                        <a href="article.html" class="text-decoration-none">Read more</a>
+                      </p>
+                      <i
+                        class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                      ></i></div
+                  ></a>
+                </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row grid-view">
+              <div class="  pb-5 grid-box">
+                <div class="card border-0 shadow">
+                  <div class="card rounded-top border-0">
+                    <img src="img/bookmark-tech-1-page-image/design-book.png" alt="" class="image-fluid zoom" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title mb-1">Career in Tech</h5>
+                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
+                    <h6 class="my-2">
+                      The title of the article or heading should be here
+                    </h6>
+                    <p class="card-text text-muted" style="font-size: 12px">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Excepturi eligendi deleniti omnis exercitationem quia?
+                      Doloremque eum sunt
+                    </p>
+                    <div class="d-flex flex-wrap">
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                    </div>
+                  </div>
+                  <div
+                  class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                >
+                  <div class="first-right d-flex align-items-center py-1">
+                    <div class="d-flex me-4 align-items-center">
+                      <i
+                        class="fa-solid fa-hands-clapping me-1 fs-5"
+                        id="change"
+                      ></i>
+                      <h6 class="mb-0" id="count">10</h6>
+                    </div>
+                     <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                  </div>
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                        <a href="article.html" class="text-decoration-none">Read more</a>
+                      </p>
+                      <i
+                        class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                      ></i></div
+                  ></a>
+                </div>
+                </div>
+              </div>
+              <div class="  pb-5 grid-box">
+                <div class="card border-0 shadow">
+                  <div class="card rounded-top border-0">
+                    <img src="img/bookmark-tech-1-page-image/design-vr.png" alt="" class="image-fluid zoom" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title mb-1">Career in Tech</h5>
+                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
+                    <h6 class="my-2">
+                      The title of the article or heading should be here
+                    </h6>
+                    <p class="card-text text-muted" style="font-size: 12px">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Excepturi eligendi deleniti omnis exercitationem quia?
+                      Doloremque eum sunt
+                    </p>
+                    <div class="d-flex flex-wrap">
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                    </div>
+                  </div>
+                  <div
+                  class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                >
+                  <div class="first-right d-flex align-items-center py-1">
+                    <div class="d-flex me-4 align-items-center">
+                      <i
+                        class="fa-solid fa-hands-clapping me-1 fs-5"
+                        id="change"
+                      ></i>
+                      <h6 class="mb-0" id="count">10</h6>
+                    </div>
+                     <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                  </div>
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                        <a href="article.html" class="text-decoration-none">Read more</a>
+                      </p>
+                      <i
+                        class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                      ></i></div
+                  ></a>
+                </div>
+                </div>
+              </div>
+              <div class=" pb-5  grid-box">
+                <div class="card border-0 shadow">
+                  <div class="card rounded-top border-0">
+                    <img src="img/bookmark-tech-1-page-image/design-pc.png" alt="" class="image-fluid zoom" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title mb-1">Career in Tech</h5>
+                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
+                    <h6 class="my-2">
+                      The title of the article or heading should be here
+                    </h6>
+                    <p class="card-text text-muted" style="font-size: 12px">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Excepturi eligendi deleniti omnis exercitationem quia?
+                      Doloremque eum sunt
+                    </p>
+                    <div class="d-flex flex-wrap">
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                    </div>
+                  </div>
+                  <div
+                  class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                >
+                  <div class="first-right d-flex align-items-center py-1">
+                    <div class="d-flex me-4 align-items-center">
+                      <i
+                        class="fa-solid fa-hands-clapping me-1 fs-5"
+                        id="change"
+                      ></i>
+                      <h6 class="mb-0" id="count">10</h6>
+                    </div>
+                     <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                  </div>
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                        <a href="article.html" class="text-decoration-none">Read more</a>
+                      </p>
+                      <i
+                        class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                      ></i></div
+                  ></a>
+                </div>
+                </div>
+              </div>
+              <div class="grid-box">
+                <div class="card border-0 shadow">
+                  <div class="card rounded-top border-0">
+                    <img src="img/bookmark-tech-1-page-image/design-vr.png" alt="" class="image-fluid zoom" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title mb-1">Career in Tech</h5>
+                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
+                    <h6 class="my-2">
+                      The title of the article or heading should be here
+                    </h6>
+                    <p class="card-text text-muted" style="font-size: 12px">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Excepturi eligendi deleniti omnis exercitationem quia?
+                      Doloremque eum sunt
+                    </p>
+                    <div class="d-flex flex-wrap">
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                    </div>
+                  </div>
+                  <div
+                  class="d-flex justify-content-between align-items-center px-3 pt-1 pb-2"
+                >
+                  <div class="first-right d-flex align-items-center py-1">
+                    <div class="d-flex me-4 align-items-center">
+                      <i
+                        class="fa-solid fa-hands-clapping me-1 fs-5"
+                        id="change"
+                      ></i>
+                      <h6 class="mb-0" id="count">10</h6>
+                    </div>
+                     <i class="fa-solid fa-bookmark me-4 fs-5 book"></i>
+                <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
+                  </div>
+                  <a href="#" class="text-decoration-none"
+                    ><div class="d-flex">
+                      <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                        <a href="article.html" class="text-decoration-none">Read more</a>
+                      </p>
+                      <i
+                        class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                      ></i></div
+                  ></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Design Bookmark End -->
+
+      </div>
+    </div>
+  </section>
+  <!-- End of Bookmark Section -->
+
+
+
+  
+
+  <!-- Start of Newsletter Section -->
+  <section id="newsletter" style="
+        background-image: url(img/landing-page-image/footer-image.png);
+        background-position: center;
+        background-size: cover;
+      ">
+    <div class="">
+      <div class="row py-5 w-100 m-0">
+        <div class="col-md-8 mx-auto pt-4">
+          <div class="hero-text text-center">
+            <h1 class="text-light">SUBSCRIBE TO OUR NEWSLETTER</h1>
+            <p class="my-4" style="color: #e0e0e0da">
+              Get updates on new articles and blogs
+            </p>
+            <div
+              class="input-box d-flex justify-content-between align-items-center w-75 border py-1 border-light px-1 mx-auto">
+              <input type="text" class="form-control w-100 bg-transparent border-0 text-light"
+                placeholder="&#xf0e0; Enter email...." style="
+                    font-family: FontAwesome, Arial;
+                    font-style: normal;
+                    font-size: 12px;
+                  " />
+              <i class="fa-solid fa-arrow-right fs-4 text-light text-light"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Newsletter Section -->
+ <!-- Share Modal -->
+
+ <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-light border-0">
+        <h5 class="modal-title" id="exampleModalLabel">Share Article</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-light">
+        <div class="justify content-center d-flex flex-column">
+        
+         <div class="card border-0 rounded mb-4 w-75 ms-auto me-auto ">
+          <div class="d-flex flex-column flex-md-row">
+            <img src="img/bookmark-tech-1-page-image/share-pix.png" class="img-fluid zoom ">
+            <div class=" bg-white card-body ">
+              <h5 class="card-title mb-1">UI/UX</h5>
+              <small class="text-muted" style="font-size: 12px"
+                >June 26, 2022 . 5mins read</small
+              >
+              <h6 class="my-2">
+                The title of the article or heading should be here
+              </h6>
+              <a href="#" class="text-decoration-none"
+              ><div class="d-flex">
+                <p class="text-primary me-2 mb-0" style="font-size: 12px">
+                  <a href="article.html" class="text-decoration-none">Read more</a>
+                </p>
+                <i
+                  class="fa-solid fa-arrow-right-long text-primary"
+                ></i></div
+            ></a>
+            </div>
+                      </div>
+          
+          </div>
+          
+         </div>
+          <div class="text-center latest-article-size w-75 ms-auto me-auto signin-input">
+           
+            <a
+            href="https://facebook.com"
+              target="_blank"
+              class="text-dark text-decoration-none"
+            >
+              <div
+                class="d-flex justify-content-center align-items-center p-3 rounded border ms-auto me-auto mb-2"
+              >
+                <img
+                  src="img/bookmark-tech-1-page-image/facebook icon.png"
+                  class="kodecamp-img"
+                />
+                <p class="ps-2 mb-1 ">Share on Facebook</p>
+              </div>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="text-dark text-decoration-none"
+            >
+              <div
+                class="d-flex justify-content-center align-items-center p-3 rounded border ms-auto me-auto mb-2"
+              >
+                <img
+                  src="img/bookmark-tech-1-page-image/twitter icon.png"
+                  class="kodecamp-img"
+                />
+                <p class="ps-2 mb-1 ">Share on Twitter</p>
+              </div>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="text-dark text-decoration-none"
+            >
+              <div
+                class="d-flex justify-content-center align-items-center p-3 rounded border ms-auto me-auto mb-2"
+              >
+                <img
+                  src="img/bookmark-tech-1-page-image/instagram.png"
+                  class="kodecamp-img"
+                />
+                <p class="ps-2 mb-1 ">Share on Instagram</p>
+              </div>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="text-dark text-decoration-none"
+            >
+              <div
+                class="d-flex justify-content-center align-items-center p-3 rounded border ms-auto me-auto mb-2"
+              >
+                <img
+                  src="img/bookmark-tech-1-page-image/linkedln.png"
+                  class="kodecamp-img"
+                />
+                <p class="ps-2 mb-1 ">Share on Linkedin</p>
+              </div>
+            </a>
+            <div class=" pt-2 w-100">
+              <input type="text" placeholder="Kodeblog.com/Trending/Figma_new_features " class=" py-2  bg-secondary rounded border-0 trending-input">
+              <button class="btn btn-primary m-negative p-1">Copy link</button>
+            </div>
+    
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+  <!-- End of Share Modal -->
+
+  <!-- Sign Up Modal -->
+  <section class="popup hidden">
+    <div class="popup-content p-5 hidden">
+      <div class="justify content-center d-flex flex-column">
+        <div class="ms-auto">
+          <button class="close-modal border-0 bg-white">&times;</button>
+        </div>
+        <div class="text-center latest-article-size">
+          <img class="" src="img/landing-page-image/logo.png" alt="kodecamp logo" />
+          <p class="fs-5 fw-bolder pt-2 swap1">Join KodeBlog</p>
+          <a href="https://gmail.com" target="_blank" class="text-dark text-decoration-none">
+            <div class="d-flex  justify-content-center align-items-center w-75 signin-input p-2 rounded border ms-auto me-auto mb-2">
+              <img src="img/landing-page-image/google icon.png" class="kodecamp-img" />
+              <p class="ps-2 mb-1 swap2">Sign Up with Google</p>
+            </div>
+          </a>
+          <a href="https://facebook.com" target="_blank" class="text-dark text-decoration-none">
+            <div class="d-flex  justify-content-center align-items-center w-75 signin-input p-2 rounded border ms-auto me-auto mb-2">
+              <img src="img/landing-page-image/facebook icon.png" class="kodecamp-img" />
+              <p class="ps-2 mb-1 swap3">Sign Up with Facebook</p>
+            </div>
+          </a>
+          <a href="https://yahoo.com" target="_blank" class="text-dark text-decoration-none">
+            <div class="d-flex  justify-content-center align-items-center w-75 signin-input p-2 rounded border ms-auto me-auto mb-2">
+              <img src="img/landing-page-image/sms icon.png" class="kodecamp-img" />
+              <p class="ps-2 mb-1 swap4">Sign Up with Email</p>
+            </div>
+          </a>
+          <div class="pb-4 pt-1 pb-md-5">
+            <p><span class="swap6">Already a Member?</span>
+              <span>
+                <a href="#" class="text-decoration-none swap">Sign In</a></span>
+            </p>
+          </div>
+          <div class="text-center ms-auto me-auto">
+            Click <span class="swap5">“Sign up”</span> to agree to Kodeblog’s
+            <span><a href="terms.html" class="text-success">Terms of Service</a></span> and acknowledge that
+            Kodeblog’s <span><a href="privacy.html" class="text-success">Privacy Policy</a></span> applies to
+            you.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='overlay hidden'></div>
+  </section>
+  <!-- End of Sign Up Modal -->
+
+  <!-- Start of Footer -->
+  <section id="footer" class="py-5 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 mx-auto">
+                <div class="card bg-transparent border-0">
+                    <img src="img/landing-page-image/logo.png" alt="" class="w-25 h-25 mb-2">
+                    <p class="text-light"><i class="fa-solid fa-phone"></i> +(234) 810 950 7906</p>
+                    <p class="text-light"><i class="fa-solid fa-envelope"></i> kodeblogteam@gmail.com</p>
+                    <p class="text-light"><i class="fa-solid fa-at"></i> 38 Afaha Uqua Road, Eket, Akwa-Ibom State.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 mx-auto">
+                <div class="card bg-transparent border-0">
+                    <h5 class="text-light">USEFUL LINKS</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#tech" class="text-light text-decoration-none">Tech and Lifestyles</a></li>
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#business" class="text-light text-decoration-none">Business</a></li>
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#trending" class="text-light text-decoration-none">Trending</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 mx-auto">
+                <div class="card bg-transparent border-0">
+                    <h5 class="text-light">QUICK LINKS</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">Web Development</a></li>
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">UI/UX</a></li>
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">Andriod Development</a></li>
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">Card Learners</a></li>
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">Backend Development</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 mx-auto">
+                <div class="card bg-transparent border-0">
+                    <h5 class="text-light">FOLLOW US</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="https://web.facebook.com/kodehauz/?_rdc=1&_rdr" target="_blank" class="text-light text-decoration-none"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="https://twitter.com/kodehauz?lang=en" target="_blank" class="text-light text-decoration-none"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="https://www.instagram.com/kodehauz/" target="_blank" class="text-light text-decoration-none"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="https://ng.linkedin.com/company/kodehauz" target="_blank" class="text-light text-decoration-none"><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="telegram.com" target="_blank" class="text-light text-decoration-none"><i class="fa-brands fa-telegram"></i> Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p class="text-light">Copyright &copy; 2022 KodeBlog</p>
+        </div>
+    </div>
+  </section>
+  <!-- End of Footer -->
+ 
+ 
+
+  <!-- Start of Scripts -->
+
+  <script src="js/app.js"></script>
+  <script src="js/bookmark.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
