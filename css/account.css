@@ -7,6 +7,9 @@
   margin-bottom: -1rem;
 }
 
+.user input::placeholder {
+  color: black !important;
+}
 .account-heading {
   font-style: bold;
   font-weight: 700 !important;
