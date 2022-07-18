@@ -21,7 +21,6 @@ function rotateChevron() {
   document.querySelector(".fa-chevron-down").style.transform = "rotate(180deg)";
 }
 
-
 const modalNotify = document.querySelector(".popup-content-notify");
 const modalParentNotify = document.querySelector(".popup-notify");
 const overlayNotify = document.querySelector(".overlay-notify");
@@ -52,7 +51,7 @@ const notifArray = [
             <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
               <div class="col-2 m-0 bg-transparent">
                 <div class="card border-0 bg-transparent">
-                  <img src="img/landing-page-image/logo-2.png" alt="">
+                  <img src="img/trending-page-image/logo-2.png" alt="">
                 </div>
               </div>
               <div class="col-8 m-0 bg-transparent">
@@ -83,89 +82,105 @@ const notifArray = [
                 </div>
               </div>
             </div>
-          </div>`
-    
-  },{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
-]
+          </div>`,
+  },
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+];
 
 let data = notifArray[0];
 notifArray.fill(data, 1, 26);
 
-const notification = document.querySelector('.notification-details');
-let element = '';
+const notification = document.querySelector(".notification-details");
+let element = "";
 for (let i = 0; i < notifArray.length; i++) {
   element += notifArray[i].item;
 }
 
 notification.innerHTML = element;
 
-
 function toggleNotif() {
-    const menuBtn = document.querySelectorAll('.info-toggle');
+  const menuBtn = document.querySelectorAll(".info-toggle");
 
-    menuBtn.forEach(function clickEvent(e) {
-      e.addEventListener('click', toggleFunc);
-    })
+  menuBtn.forEach(function clickEvent(e) {
+    e.addEventListener("click", toggleFunc);
+  });
 
-    function toggleFunc(e) {
-      let parentElem = e.target.closest('.notification-container');
-      let _id = parentElem.id
-      if (_id) {
-        let childElem = parentElem.querySelector(`[dataset=${_id}]`);
-        childElem.classList.toggle('hidden-notify');
-      }
+  function toggleFunc(e) {
+    let parentElem = e.target.closest(".notification-container");
+    let _id = parentElem.id;
+    if (_id) {
+      let childElem = parentElem.querySelector(`[dataset=${_id}]`);
+      childElem.classList.toggle("hidden-notify");
     }
+  }
 }
 
 toggleNotif();
 
-
 function deleteFunc() {
-  const deleteBtn = document.querySelectorAll('.delete-btn')
+  const deleteBtn = document.querySelectorAll(".delete-btn");
   for (let i = 0; i < deleteBtn.length; i++) {
-    deleteBtn[i].addEventListener('click', () => {
+    deleteBtn[i].addEventListener("click", () => {
       deleteBtn[i].parentElement.parentElement.style.opacity = 0;
       setTimeout(() => {
-        deleteBtn[i].parentElement.style.display = 'none';
+        deleteBtn[i].parentElement.style.display = "none";
         deleteBtn[i].parentElement.parentElement.remove();
       }, 500);
-    })
-    
+    });
   }
-
 }
 
 deleteFunc();
 
+let sideDrop = document.querySelector(".sidedrop");
+let sideListItems = document.querySelector(".side-list-item");
 
-let sideDrop = document.querySelector('.sidedrop');
-let sideListItems = document.querySelector('.side-list-item');
-
-sideDrop.addEventListener('click', function() {
-  sideListItems.classList.toggle('side-list-item-show');
-}
-)
-
+sideDrop.addEventListener("click", function () {
+  sideListItems.classList.toggle("side-list-item-show");
+});
 
 function notCleek() {
-  const notClick = document.querySelectorAll('#notclick');
+  const notClick = document.querySelectorAll("#notclick");
   for (let i = 0; i < notClick.length; i++) {
-    notClick[i].addEventListener('click', () => {
-      notClick[i].style.backgroundColor = '#E0E0E0';
-    })
+    notClick[i].addEventListener("click", () => {
+      notClick[i].style.backgroundColor = "#E0E0E0";
+    });
   }
 }
 notCleek();
 
 function readAll() {
-  const readAll = document.querySelector('.markall');
-  readAll.addEventListener('click', () => {
-    let notClick = document.querySelectorAll('#notclick');
+  const readAll = document.querySelector(".markall");
+  readAll.addEventListener("click", () => {
+    let notClick = document.querySelectorAll("#notclick");
     for (let i = 0; i < notClick.length; i++) {
-      notClick[i].style.backgroundColor = '#E0E0E0';
+      notClick[i].style.backgroundColor = "#E0E0E0";
     }
-  }
-  )
+  });
 }
 readAll();
 
@@ -195,11 +210,23 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-let accountDrop = document.querySelector('.account-drop');
-let accountList = document.querySelector('.account-list');
+let accountDrop = document.querySelector(".account-drop");
+let accountList = document.querySelector(".account-list");
 console.log(accountList);
-accountDrop.addEventListener('click', function() {
-  console.log('clicked');
-  accountList.classList.toggle('account-list-show');
+accountDrop.addEventListener("click", function () {
+  console.log("clicked");
+  accountList.classList.toggle("account-list-show");
+});
+
+//input function//
+
+const button = document.querySelector(".trending-button");
+const input = document.querySelector(".trending-input");
+
+input.value = "Kodeblog.com/Trending/Figma_new_features";
+function copy() {
+  const copyText = input.value;
+  navigator.clipboard.writeText(copyText);
 }
-)
+
+button.addEventListener("click", copy);

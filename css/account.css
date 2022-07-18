@@ -44,6 +44,10 @@
   display: block;
 }
 
+.lang ul li {
+  list-style: none;
+}
+
 .hidden {
   display: none !important;
 }
@@ -61,3 +65,4 @@
 .active- {
   color: blue;
 }
+

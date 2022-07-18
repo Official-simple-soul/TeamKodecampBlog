@@ -42,3 +42,16 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+let book = document.querySelectorAll(".book");
+////BOOKMARK COLOR
+for (let i = 0; i < book.length; i++) {
+  book[i].style.color = "white";
+  book[i].addEventListener("click", function () {
+    if (book[i].style.color === "white") {
+      book[i].style.color = "black";
+    } else {
+      book[i].style.color = "white";
+    }
+  });
+}

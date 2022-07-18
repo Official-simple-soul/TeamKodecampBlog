@@ -7,11 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- styling -->
-  <link rel="stylesheet" href="Swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/bookmark.css" />
-  <link rel="stylesheet" href="css/landing-page.css" />
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="Swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/bookmark-page.css"/>
  
 
   <!-- Google fonts -->
@@ -76,7 +74,7 @@
               <a class="nav-link text-primary mx-2" href="home.html">Browse <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark mx-2" href="#trending">Trending</a>
+              <a class="nav-link text-dark mx-2" href="trending.html">Trending</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark mx-2" href="#popular">Popular</a>
@@ -106,7 +104,7 @@
               <img src="img/landing-page-image/Avatar.png" alt="" class="account-drop" style="width: 30px; height: 30px">
               <div class="">
                 <ul class="account-list position-absolute mt-3 bg-white px-1 ps-1">
-                  <a href="account-user.html" class="text-decoration-none text-dark">
+                  <a href="account.html" class="text-decoration-none text-dark">
                     <li class="">
                       <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-3">
                         <img src="img/landing-page-image/logout.png" alt="" width="23px">
@@ -115,7 +113,7 @@
                     </div>
                     </li>
                   </a>
-                  <a href="/kodecamp-blog-frontend/bookmark.html" class="text-decoration-none text-dark">
+                  <a href="bookmark.html" class="text-decoration-none text-dark">
                     <li class="active">
                       <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-3">
                         <i class="fa-regular fa-bookmark fs-4"></i>
@@ -124,7 +122,7 @@
                     </div>
                     </li>
                   </a>
-                  <a href="account-user.html" class="text-decoration-none text-dark">
+                  <a href="account.html" class="text-decoration-none text-dark">
                     <li>
                       <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-3">
                         <img src="img/landing-page-image/settings.png" alt="" width="23px">
@@ -206,7 +204,7 @@
       style="background-image: url(img/bookmark-tech-1-page-image/blog\ image.png); background-position: center; background-size: cover;"
       >
       <div class="home-links d-flex justify-content-center">
-          <a href="index.html" class="text-decoration-none">
+          <a href="home.html" class="text-decoration-none">
               <h4 class=" pt-5  text-center"> HOME » </h4>
           </a>
           <a href="bookmark.html" class="text-decoration-none">
@@ -317,6 +315,7 @@
             <div class="modal-input mb-5">
               <p>Name</p>
               <input type="text" class="p-2 modal-input-value">
+              <div class="error-msg"></div>
             </div>
             <div>
               <button type="button" class="btn btn-outline-primary me-4 cancel">Cancel</button>
@@ -747,7 +746,7 @@
         <!-- Technology Bookmark End -->
 
         <!-- Design Bookmark Start-->
-        <section id="Design-1" class="Design-1 bg-white col-lg-8 col-md-8 col-12  pb-3 pt-5 pt-sm-0  animate__animated animate__zoomIn">
+        <section id="Design-1" class="Design-1 col-lg-8 col-md-8 col-12  pb-3 pt-5 pt-sm-0  animate__animated animate__zoomIn">
           <div class="container design-container px-1">
             <div class="col-md-12 d-none list-view justify-content-end">
               <div class="card border-0 bg-transparent">
@@ -1307,8 +1306,8 @@
               </div>
             </a>
             <div class=" pt-2 w-100">
-              <input type="text" placeholder="Kodeblog.com/Trending/Figma_new_features " class=" py-2  bg-secondary rounded border-0 trending-input">
-              <button class="btn btn-primary m-negative p-1">Copy link</button>
+              <input type="text" placeholder="Kodeblog.com/Trending/Figma_new_features" class=" py-2  bg-secondary rounded border-0 trending-input">
+              <button class="btn btn-primary m-negative p-1 trending-button border-0" onclick="this.blur();">Copy link</button>
             </div>
     
           </div>
@@ -1370,55 +1369,74 @@
   <!-- Start of Footer -->
   <section id="footer" class="py-5 py-5">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-6 mx-auto">
-                <div class="card bg-transparent border-0">
-                    <img src="img/landing-page-image/logo.png" alt="" class="w-25 h-25 mb-2">
-                    <p class="text-light"><i class="fa-solid fa-phone"></i> +(234) 810 950 7906</p>
-                    <p class="text-light"><i class="fa-solid fa-envelope"></i> kodeblogteam@gmail.com</p>
-                    <p class="text-light"><i class="fa-solid fa-at"></i> 38 Afaha Uqua Road, Eket, Akwa-Ibom State.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 mx-auto">
-                <div class="card bg-transparent border-0">
-                    <h5 class="text-light">USEFUL LINKS</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="index.html" class="text-light text-decoration-none">Home</a></li>
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#tech" class="text-light text-decoration-none">Tech and Lifestyles</a></li>
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#business" class="text-light text-decoration-none">Business</a></li>
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#trending" class="text-light text-decoration-none">Trending</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 mx-auto">
-                <div class="card bg-transparent border-0">
-                    <h5 class="text-light">QUICK LINKS</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">Web Development</a></li>
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">UI/UX</a></li>
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">Andriod Development</a></li>
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">Card Learners</a></li>
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">Backend Development</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 mx-auto">
-                <div class="card bg-transparent border-0">
-                    <h5 class="text-light">FOLLOW US</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="https://web.facebook.com/kodehauz/?_rdc=1&_rdr" target="_blank" class="text-light text-decoration-none"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="https://twitter.com/kodehauz?lang=en" target="_blank" class="text-light text-decoration-none"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="https://www.instagram.com/kodehauz/" target="_blank" class="text-light text-decoration-none"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="https://ng.linkedin.com/company/kodehauz" target="_blank" class="text-light text-decoration-none"><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="telegram.com" target="_blank" class="text-light text-decoration-none"><i class="fa-brands fa-telegram"></i> Telegram</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-12 mx-auto">
+          <div class="card bg-transparent border-0">
+            <img src="img/landing-page-image/logo.png" alt="" class="w-25 h-25 mb-2">
+            <p class="text-light"><i class="fa-solid fa-phone"></i> +(234) 810 950 7906</p>
+            <p class="text-light"><i class="fa-solid fa-envelope"></i> kodeblogteam@gmail.com</p>
+            <p class="text-light"><i class="fa-solid fa-at"></i> 38 Afaha Uqua Road, Eket, Akwa-Ibom State.</p>
+          </div>
         </div>
-        <div class="text-center mt-3">
-            <p class="text-light">Copyright &copy; 2022 KodeBlog</p>
+        <div class="col-lg-3 col-md-3 col-6 mx-auto">
+          <div class="card bg-transparent border-0">
+            <h5 class="text-light">USEFUL LINKS</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="home.html"
+                  class="text-light text-decoration-none">Home</a></li>
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="about.html"
+                  class="text-light text-decoration-none">About Us</a></li>
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#tech"
+                  class="text-light text-decoration-none">Tech and Lifestyles</a></li>
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#business"
+                  class="text-light text-decoration-none">Business</a></li>
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="trending.html"
+                  class="text-light text-decoration-none">Trending</a></li>
+            </ul>
+          </div>
         </div>
+        <div class="col-lg-3 col-md-3 col-6 mx-auto">
+          <div class="card bg-transparent border-0">
+            <h5 class="text-light">QUICK LINKS</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank"
+                  class="text-light text-decoration-none">Web Development</a></li>
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank"
+                  class="text-light text-decoration-none">UI/UX</a></li>
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank"
+                  class="text-light text-decoration-none">Andriod Development</a></li>
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank"
+                  class="text-light text-decoration-none">Card Learners</a></li>
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank"
+                  class="text-light text-decoration-none">Backend Development</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-12 mx-auto">
+          <div class="card bg-transparent border-0 mo">
+            <h5 class="text-light">FOLLOW US</h5>
+            <ul class="list-group list-group-flush mob">
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a
+                  href="https://web.facebook.com/kodehauz/?_rdc=1&_rdr" target="_blank"
+                  class="text-light text-decoration-none"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a
+                  href="https://twitter.com/kodehauz?lang=en" target="_blank" class="text-light text-decoration-none"><i
+                    class="fa-brands fa-twitter"></i> Twitter</a></li>
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a
+                  href="https://www.instagram.com/kodehauz/" target="_blank" class="text-light text-decoration-none"><i
+                    class="fa-brands fa-instagram"></i> Instagram</a></li>
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a
+                  href="https://ng.linkedin.com/company/kodehauz" target="_blank"
+                  class="text-light text-decoration-none"><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
+              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="telegram.com" target="_blank"
+                  class="text-light text-decoration-none"><i class="fa-brands fa-telegram"></i> Telegram</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+      <p class="text-light">Copyright &copy; 2022 KodeBlog</p>
+    </div>
     </div>
   </section>
   <!-- End of Footer -->
@@ -1427,9 +1445,9 @@
 
   <!-- Start of Scripts -->
 
-  <script src="js/app.js"></script>
-  <script src="js/bookmark.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="js/app.js"></script> -->
+  <script src="js/bookmark-page.js"></script>
 </body>
 
 </html>

@@ -8,7 +8,7 @@
   <!-- styling -->
   <link rel="stylesheet" href="Swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css"/>
+  <!-- <link rel="stylesheet" href="css/style.css"/> -->
   <link rel="stylesheet" href="css/article.css">
 
   <!-- Google fonts -->
@@ -52,7 +52,7 @@
   <!-- End TopBar -->
 
   <!-- NavBar -->
-  <section id="nav-bar" class="bg-light">
+  <section id="nav-bar" class="">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
         <a class="navbar-brand" href="#"><img src="img/article-image/logo.png" alt="" class="w-75 h-auto"></a>
@@ -325,10 +325,10 @@
                               <p class="" style="font-size: 10px;">5mins read</p>
                             </div>
                             <h6 class="fw-bold" style="color: #042554;">The title of the article or heading should be here</h6>
-                            <a href="article.html" class="text-decoration-none"><div class="d-flex">
-                              <p class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</p> 
-                              <i class="fa-solid fa-arrow-right pt-1"></i>
-                          </div></a>
+                              <a href="#" class="text-decoration-none"><div class="d-flex">
+                                <a href="article.html" class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</a> 
+                                <i class="bi bi-arrow-right m3-4 mb-3"></i>
+                              </div></a>
                           </div>
                         </div>
                       </div>
@@ -350,9 +350,9 @@
                             </div>
                             <h6 class="fw-bold" style="color: #042554;">The title of the article or 
                               heading should be here</h6>
-                              <a href="article.html" class="text-decoration-none"><div class="d-flex">
-                                  <p class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</p> 
-                                  <i class="fa-solid fa-arrow-right pt-1"></i>
+                              <a href="#" class="text-decoration-none"><div class="d-flex">
+                                  <a href="article.html" class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</a> 
+                                  <i class="bi bi-arrow-right m3-4 mb-3"></i>
                               </div></a>
                           </div>
                         </div>
@@ -375,10 +375,10 @@
                             </div>
                             <h6 class="fw-bold" style="color: #042554;">The title of the article or 
                               heading should be here</h6>
-                              <a href="article.html" class="text-decoration-none"><div class="d-flex">
-                                <p class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</p> 
-                                <i class="fa-solid fa-arrow-right pt-1"></i>
-                            </div></a>
+                              <a href="#" class="text-decoration-none"><div class="d-flex">
+                                <a href="article.html" class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</a> 
+                                <i class="bi bi-arrow-right m3-4 mb-3"></i>
+                              </div></a>
                           </div>
                         </div>
                       </div>
@@ -474,69 +474,67 @@
 
 
  <!-- Comment section -->
- <section id="comment-section">
-  <div class="container">
-    <div class="comment-sec">
-        <h1>Leave A Comment</h1>
-        <div class="form bg-light p-4 rounded">
-            <input type="text" placeholder="Enter your name" class="name p-2 rounded">
-            <div class="input-group d-flex">
-                <input type="text" class="input rounded p-2 mt-2" placeholder="Write a comment" aria-label="Recipient's username">
-                <span class="button p-2 bg-primary rounded mt-2 text-white">Post Comment</span>
-            </div>
-        </div>
-        <div class="comments">
-            <div class="comment-container" id="first-comment">
-                <div class="info bg-light p-4 rounded mt-3">
-                    <div class="profile-head d-flex">
-                        <h6 class="profile-tag rounded-circle d-flex justify-content-center text-light p-1 m-1">AA</h6>
-                        <div class="profile-info ms-2">
-                            <span class="name">${e.name}</span>
-                            <div class="date">${e.date}</div>
-                        </div>
-                    </div>
-                    <div class="profile-body">
-                        <p>${e.comment}</p>
-                    </div><hr>
-                    <div class="reply-icons">
-                        <i class="fa-solid fa-angles-up"></i>
-                        <span class="hide-reply me-2">Hide all Replies</span>
-                        <span class="reply-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z"/>
-                                <span>Reply</span>
-                            </svg>
-                        </span>
-                    </div>
-                </div>
-                <span class="reply-input hide-input" dataset="first-comment">
-                    <input type="text" placeholder="Name" class="commenter rounded">
-                    <input class="rounded" type="text" placeholder="Send a Reply">
-                    <button class="rounded mx-3">Send</button>
-                </span>
-                <div class="replies-sec d-flex justify-content-end mt-5" id="first-reply">
-                    <ul class="list-items">
-                        <li>
-                            <div class="replies bg-light p-4 rounded mt-3">
-                                <div class="profile-head d-flex">
-                                    <h6 class="profile-tag rounded-circle d-flex justify-content-center p-1 m-1">AA</h6>
-                                    <div class="profile-info ms-2">
-                                        <span class="name">John Doe</span>
-                                        <div class="date">13 December 2020 - 19:35</div>
-                                    </div>
-                                </div>
-                                <div class="profile-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eum.</p>
-                                </div><hr>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+ <div class="container">
+  <div class="comment-sec">
+      <h1>Leave A Comment</h1>
+      <div class="form bg-light p-4 rounded">
+          <input type="text" placeholder="Enter your name" class="name p-2 rounded col-12">
+          <div class="input-group d-flex">
+              <textarea type="text" class="input rounded p-2 my-2" placeholder="Write a comment" aria-label="Recipient's username" rows="4"> </textarea>
+          </div>
+          <div class="button p-2 bg-primary text-white rounded mt-1 col-lg-3 text-center">Post Comment</div>
+      </div>
+      <div class="comments">
+          <div class="comment-container" id="first-comment">
+              <div class="info bg-light p-4 rounded mt-3">
+                  <div class="profile-head d-flex">
+                      <h6 class="profile-tag rounded-circle d-flex justify-content-center p-1 m-1">AA</h6>
+                      <div class="profile-info ms-2">
+                          <span class="name">${e.name}</span>
+                          <div class="date">${e.date}</div>
+                      </div>
+                  </div>
+                  <div class="profile-body">
+                      <p>${e.comment}</p>
+                  </div><hr>
+                  <div class="reply-icons">
+                      <i class="fa-solid fa-angles-up"></i>
+                      <span class="hide-reply me-2">Hide all Replies</span>
+                      <span class="reply-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z"/>
+                              <span>Reply</span>
+                          </svg>
+                      </span>
+                  </div>
+              </div>
+              <span class="reply-input hide-input" dataset="first-comment">
+                  <input type="text" placeholder="Name" class="commenter rounded">
+                  <input class="rounded" type="text" placeholder="Send a Reply">
+                  <button class="rounded">Send</button>
+              </span>
+              <div class="replies-sec d-flex justify-content-end mt-5" id="first-reply">
+                  <ul class="list-items">
+                      <li>
+                          <div class="replies bg-light p-4 rounded mt-3">
+                              <div class="profile-head d-flex">
+                                  <h6 class="profile-tag rounded-circle d-flex justify-content-center p-1 m-1">AA</h6>
+                                  <div class="profile-info ms-2">
+                                      <span class="name">John Doe</span>
+                                      <div class="date">13 December 2020 - 19:35</div>
+                                  </div>
+                              </div>
+                              <div class="profile-body">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eum.</p>
+                              </div><hr>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
   </div>
- </section>
+</div>
 
 
   <!-- Start of Newsletter Section -->
@@ -734,7 +732,7 @@
   <section id="footer" class="py-5 py-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-12 col-12 mx-auto mb-3">
+            <div class="col-lg-3 col-md-3 col-6 mx-auto">
                 <div class="card bg-transparent border-0">
                     <img src="img/article-image/logo.png" alt="" class="w-25 h-25 mb-2">
                     <p class="text-light"><i class="fa-solid fa-phone"></i> +(234) 810 950 7906</p>
@@ -742,7 +740,7 @@
                     <p class="text-light"><i class="fa-solid fa-at"></i> 38 Afaha Uqua Road, Eket, Akwa-Ibom State.</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-6 mx-auto mb-3">
+            <div class="col-lg-3 col-md-3 col-6 mx-auto">
                 <div class="card bg-transparent border-0">
                     <h5 class="text-light">USEFUL LINKS</h5>
                     <ul class="list-group list-group-flush">
@@ -754,7 +752,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-6 mx-auto mb-3">
+            <div class="col-lg-3 col-md-3 col-6 mx-auto">
                 <div class="card bg-transparent border-0">
                     <h5 class="text-light">QUICK LINKS</h5>
                     <ul class="list-group list-group-flush">
@@ -766,7 +764,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-12 col-12 mx-auto mb-3">
+            <div class="col-lg-3 col-md-3 col-6 mx-auto">
                 <div class="card bg-transparent border-0">
                     <h5 class="text-light">FOLLOW US</h5>
                     <ul class="list-group list-group-flush">
@@ -787,7 +785,7 @@
   <!-- End of Footer -->
 
   <!-- Start of Scripts -->
-  <script src="js/app.js"></script>
+  <!-- <script src="js/app.js"></script> -->
   <script src="js/article.js"></script>
   <script src="js/bootstrap.min.js"></script>
 

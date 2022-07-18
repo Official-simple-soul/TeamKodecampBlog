@@ -1,4 +1,3 @@
-//array of default items
 const commentArray = [
     {
         name: 'John Doe',
@@ -28,7 +27,7 @@ function displayItems() {
         details += `<div class="comment-container" id="first-comment" data-select="first-reply" data-hide="hide-btn">
                     <div class="info bg-light p-4 rounded mt-3">
                         <div class="profile-head d-flex">
-                            <h6 class="profile-tag rounded-circle d-flex justify-content-center text-light p-1 m-1">AA</h6>
+                            <h6 class="profile-tag rounded-circle d-flex justify-content-center align-items-center text-light p-1 m-1">AA</h6>
                             <div class="profile-info ms-2">
                                 <span class="name">${e.name}</span>
                                 <div class="date">${e.date}</div>
@@ -51,9 +50,9 @@ function displayItems() {
                         </div>
                     </div>
                     <span class="reply-input hide-input" dataset="first-comment">
-                        <input type="text" placeholder="Name" class="commenter rounded">
-                        <input class="comment-reply rounded" type="text" placeholder="Send a Reply">
-                        <button class="send rounded mx-3">Send</button>
+                        <input type="text" placeholder="Name" class="commenter rounded p-1">
+                        <input class="comment-reply rounded p-1" type="text" placeholder="Send a Reply">
+                        <button class="send bg-primary rounded p-1">Send</button>
                     </span>
                     <div class="replies-sec d-flex justify-content-end mt-5">
                         <ul class="list-items"  dataset="first-reply" id="hide-btn">
@@ -183,82 +182,3 @@ function hideInput() {
 
 }
 hideInput();
-
-
-
-
-// function bookFunction(){
-//     document.getElementById("book").getElementsByClassName.color = "black"
-// }
-
-
-// var audioTrack = WaveSurfer.create({
-//     container: '.audio',
-//     waveColor: '#eee',
-//     progressColor: 'red',
-//     barWidth: 2 
-// });
-
-
-// var audioTrack = WaveSurfer.create({
-//     container: ".audio",
-//     waveColor: "#fff",
-//     progressColor: "#fff",
-//     barWidth: 2
-// });
-
-// audioTrack.load('../audio/track1.mp3');
-
-// const playBtn = document.querySelector(".play-btn");
-// const stopBtn = document.querySelector(".stop-btn");
-// const muteBtn = document.querySelector(".mute-btn");
-// const volumeSlider = document.querySelector(".play-btn");
-
-// playBtn.addEventListener("click", () =>{
-//     audioTrack.playPause();
-
-//     if (audioTrack.isPlaying()) {
-//         playBtn.classList.add("playing")
-//     } else {
-//         playBtn.classList.remove("playing")
-//     }
-// })
-
-// stopBtn.addEventListener("click", () => {
-//     audioTrack.stop();
-//     playBtn.classList.remove("playing")
-// })
-
-// volumeSlider.addEventListener("mouseUp", () => {
-//     changeVolume(volumeSlider.value)
-// })
-
-
-// const changeVolume = (volume) =>{
-//     if (volume === 0){
-//         muteBtn.classList.add("muted")
-//     } else{
-//         muteBtn.classList.remove("muted")
-//     }
-//     audioTrack.setVolume(volume)
-// }
-
-// muteBtn.addEventListener("click", () =>{
-//     if(muteBtn.classList.contains("muted")){
-//         muteBtn.classList.remove("muted");
-//         audioTrack.setVolume(0.5);
-//         volumeSlider.value = 0.5;
-//     } else {
-//         audioTrack.setVolume(0);
-//         muteBtn.classList.add("muted");
-//         volumeSlider.value = 0
-//     }
-// })
-
-
-// document.getElementById("name").addEventListener("click", function myName(){
-//     var name = prompt('What is your name?');
-
-//     document.getElementById("name").innerHTML = name;
-    
-// })

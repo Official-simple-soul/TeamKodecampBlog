@@ -1,5 +1,11 @@
 @import url("style.css");
 
 .red {
-    color: black;
+    color: black !important;
+}
+
+.book {
+    color: white;
+    -webkit-text-stroke: 2px black;
+    cursor: pointer;
 }

@@ -1,0 +1,107 @@
+@import url(style.css); 
+
+/* BOOKMARK STYLING */
+  .collection-title {
+    cursor: pointer;
+  }
+
+  .bookmark-list li{
+    list-style: none;
+  }
+
+  .bg-modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 500;
+  }
+
+  .modal-container {
+    background: white;
+    /* height: 35%; */
+    width: 46%;
+  }
+
+  .modal-input {
+    width: 80%;
+  }
+
+  .modal-input .modal-input-value {
+    width: 100%;
+  }
+
+  .modal-input p {
+    color: #828282;
+  }
+  
+  .modal-input input {
+    border: 2px solid #828282;
+    border-radius: 10px;
+  }
+
+  .home-links a{
+    color: #fff;
+  }
+  .home-links a:hover{
+    color: var(--secondary)!important;
+  }
+
+
+ .Technology-1, .Design-1, .icons-for-bookmark, .bookmark-title, .no-bookmark{
+    display: none!important;
+  }
+  .showTech1, .showDsgn1{
+    display: flex !important;
+  }
+  .show-bookmark-title{
+    display: block !important;
+  }
+  .showTech2{
+    width: 100%;
+  }
+  .active-collection{
+    background-color: #CFE2FF;
+  }
+  #tech-1:hover, #dsgn-1:hover{
+    background-color:  #e9eef8 !important;
+    cursor: pointer !important;
+  }
+  .icons-for-bookmark:hover{
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 1024px){
+    .show-icons-for-bookmark{
+      display: flex !important;
+    }
+  }
+
+@media screen and (min-width: 768px){
+  .Technology-1, .Design-1{
+    width: 66%;
+  }
+}
+  
+
+
+  @media only screen and (max-width: 768px) { 
+    .modal-container {
+      height: auto;
+      width: 72%;
+  }
+
+  
+  }
+
+@media only screen and (max-width: 426px) {
+    .modal-container {
+      height: auto;
+      width: 90%;
+  }
+  }

@@ -11,7 +11,7 @@ for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
     // window.alert("This feature is not yet available");
     // acc[i].style.backgroundColor = "red";
-    value = val[i].innerHTML;
+    let value = val[i].innerHTML;
     if (value === "User Management") {
         lang.classList.add("hidden");
         user.classList.remove("hidden");
@@ -78,3 +78,5 @@ window.onload = function () {
 
     }
 }
+
+

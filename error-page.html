@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- styling -->
+    <link rel="stylesheet" href="Swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/error-page.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- font Awesome -->
+    <script src="https://kit.fontawesome.com/b353e23091.js" crossorigin="anonymous"></script>
+
+    <!-- title -->
+    <title>Kodecamp Blog</title>
+</head>
+
+<body>
+    <!-- TopBar -->
+    <div id="top-bar" class="bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="text-dark mt-2" style="font-size: 15px;">YOUR NO.1 BLOG WEBSITE</p>
+                <div class="sidelist">
+                    <ul class="">
+                        <li class="my-1 hov">ENGLISH <i class="fa-solid fa-chevron-down sidedrop"></i>
+                            <ul class="px-2 side-list-item bg-light">
+                                <li class="my-1">FRENCH</li>
+                                <li class="my-1">SPANISH</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End TopBar -->
+
+    <!-- NavBar -->
+    <section id="nav-bar" class="">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="#"><img src="img/landing-page-image/logo.png" alt="" class="w-75 h-auto"></a>
+                <button class="navbar-toggler border-0" onclick="rotateChevron()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-primary mx-2" href="#">Browse <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="#trending">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="#popular">Popular</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark mx-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+                            <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="article.html">Latest Article</a></li>
+                                <li><a class="dropdown-item" href="trending.html">Trending</a></li>
+                                <li><a class="dropdown-item" href="#popular">Popular</a></li>
+                                <li><a class="dropdown-item" href="#start-ups">Start Ups</a></li>
+                                <li><a class="dropdown-item" href="#tech">Tech and Lifestyles</a></li>
+                                <li><a class="dropdown-item" href="#business">Business</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="#">Commuity</a>
+                        </li>
+                    </ul>
+                    <div class="side d-flex">
+                        <i class="fa-solid fa-bell fs-3 me-5 text-light please"></i>
+                        <button class="btn btn-success open-modal py-2 px-2 border-0 rounded-3 text-light" style="font-size: 13px;">Get Started</button>
+                        <!-- <img src="img/landing-page-image/Avatar.png" alt="" class="open-modal" style="width: 30px; height: 30px"> -->
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </section>
+    <!-- End NavBar -->
+
+    <!-- Start of Notification Modal -->
+    <section class="popup-notify hidden-notify">
+        <div class="popup-content-notify  hidden-notify">
+            <div class="popup-content-container p-2 d-flex flex-column">
+                <div class="ms-auto">
+                    <button class="close-modal-notify border-0">&times;</button>
+                </div>
+                <div class="notification">
+                    <div class="notification-text">
+                        <p class="text-start fw-bold">Notification</p>
+                        <p class="text-end markall" style="font-size: 10px;">Mark all as read</p>
+                    </div>
+                    <span class="notification-details">
+            
+          </span>
+                </div>
+            </div>
+        </div>
+        <div class='overlay-notify hidden-notify'></div>
+    </section>
+    <!-- End of Notification Modal -->
+
+    <!-- Sign Up Modal -->
+    <section class="popup hidden">
+        <div class="popup-content p-5 hidden">
+            <div class="justify content-center d-flex flex-column">
+                <div class="ms-auto">
+                    <button class="close-modal border-0 bg-white">&times;</button>
+                </div>
+                <div class="text-center latest-article-size">
+                    <img class="" src="img/landing-page-image/logo.png" alt="kodecamp logo" />
+                    <p class="fs-5 fw-bolder pt-2 swap1">Join KodeBlog</p>
+                    <a href="https://gmail.com" target="_blank" class="text-dark text-decoration-none">
+                        <div class="d-flex  justify-content-center align-items-center w-75 signin-input p-2 rounded border ms-auto me-auto mb-2">
+                            <img src="img/landing-page-image/google icon.png" class="kodecamp-img" />
+                            <p class="ps-2 mb-1 swap2">Sign Up with Google</p>
+                        </div>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="text-dark text-decoration-none">
+                        <div class="d-flex  justify-content-center align-items-center w-75 signin-input p-2 rounded border ms-auto me-auto mb-2">
+                            <img src="img/landing-page-image/facebook icon.png" class="kodecamp-img" />
+                            <p class="ps-2 mb-1 swap3">Sign Up with Facebook</p>
+                        </div>
+                    </a>
+                    <a href="https://yahoo.com" target="_blank" class="text-dark text-decoration-none">
+                        <div class="d-flex  justify-content-center align-items-center w-75 signin-input p-2 rounded border ms-auto me-auto mb-2">
+                            <img src="img/landing-page-image/sms icon.png" class="kodecamp-img" />
+                            <p class="ps-2 mb-1 swap4">Sign Up with Email</p>
+                        </div>
+                    </a>
+                    <div class="pb-4 pt-1 pb-md-5">
+                        <p><span class="swap6">Already a Member?</span>
+                            <span>
+                <a href="#" class="text-decoration-none swap">Sign In</a></span>
+                        </p>
+                    </div>
+                    <div class="text-center ms-auto me-auto">
+                        Click <span class="swap5">“Sign up”</span> to agree to Kodeblog’s
+                        <span><a href="terms.html" class="text-success">Terms of Service</a></span> and acknowledge that Kodeblog’s <span><a href="privacy.html" class="text-success">Privacy Policy</a></span> applies to you.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='overlay hidden'></div>
+    </section>
+    <!-- End of Sign Up Modal -->
+
+    <!-- Start of First Error Section -->
+    <div class="error-page">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-content-center">
+                <img src="img/landing-page-image/404 b 1.png" alt="404 error" style="width: 500px; height: 300px;">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h4 class="firt-h d-flex justify-content-center align-content-center fw-bolder mb-3">Something's missing</h4>
+                <h4 class="second-h d-flex justify-content-center align-content-center fw-bolder mb-5">The page you looking for is not found</h4>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary d-flex justify-content-center align-content-center text-light py-2 text-center mt-4 mb-3 fs-6 btn-home">GO TO HOME <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- End of First Error Section -->
+
+    <!-- Start a Second Error Section -->
+    <div class="error-page">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-content-center mb-3">
+                <img src="img/landing-page-image/404 a 1.png" alt="404 error" style="width: 500px; height: 300px;">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h4 class="firt-h d-flex justify-content-center align-content-center fw-bolder mb-3">Something went wrong</h4>
+                <h4 class="second-h d-flex justify-content-center align-content-center fw-bolder mb-5">Please refresh your browser</h4>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary d-flex justify-content-center align-content-center text-light py-2 text-center mt-4 mb-3 fs-6 btn-home">OK got it!</button>
+            </div>
+        </div>
+
+
+        <!-- Start of Footer -->
+        <!-- <section id="footer" class="py-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-6 mx-auto">
+                    <div class="card bg-transparent border-0">
+                        <img src="img/landing-page-image/logo.png" alt="" class="w-25 h-25 mb-2">
+                        <p class="text-light"><i class="fa-solid fa-phone"></i> +(234) 810 950 7906</p>
+                        <p class="text-light"><i class="fa-solid fa-envelope"></i> kodeblogteam@gmail.com</p>
+                        <p class="text-light"><i class="fa-solid fa-at"></i> 38 Afaha Uqua Road, Eket, Akwa-Ibom State.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6 mx-auto">
+                    <div class="card bg-transparent border-0">
+                        <h5 class="text-light">USEFUL LINKS</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#tech" class="text-light text-decoration-none">Tech and Lifestyles</a></li>
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#business" class="text-light text-decoration-none">Business</a></li>
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#trending" class="text-light text-decoration-none">Trending</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6 mx-auto">
+                    <div class="card bg-transparent border-0">
+                        <h5 class="text-light">QUICK LINKS</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">Web Development</a></li>
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">UI/UX</a></li>
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">Andriod Development</a></li>
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">Card Learners</a></li>
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="kodehauz.com" target="_blank" class="text-light text-decoration-none">Backend Development</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-6 mx-auto">
+                    <div class="card bg-transparent border-0">
+                        <h5 class="text-light">FOLLOW US</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="https://web.facebook.com/kodehauz/?_rdc=1&_rdr" target="_blank" class="text-light text-decoration-none"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="https://twitter.com/kodehauz?lang=en" target="_blank" class="text-light text-decoration-none"><i
+                    class="fa-brands fa-twitter"></i> Twitter</a></li>
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="https://www.instagram.com/kodehauz/" target="_blank" class="text-light text-decoration-none"><i
+                    class="fa-brands fa-instagram"></i> Instagram</a></li>
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="https://ng.linkedin.com/company/kodehauz" target="_blank" class="text-light text-decoration-none"><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
+                            <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="telegram.com" target="_blank" class="text-light text-decoration-none"><i class="fa-brands fa-telegram"></i> Telegram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="text-light">Copyright &copy; 2022 KodeBlog</p>
+            </div>
+        </div>
+    </section> -->
+        <!-- End of Footer -->
+
+        <!-- Start of Scripts -->
+        <script src="js/landing-page-1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
