@@ -55,7 +55,7 @@
   <section id="nav-bar" class="">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
-        <a class="navbar-brand" href="#"><img src="img/article-image/logo.png" alt="" class="w-75 h-auto"></a>
+        <a class="navbar-brand" href="#"><img src="img/landing-page-image/logo.png" alt="" class="w-75 h-auto"></a>
         <button class="navbar-toggler border-0" onclick="rotateChevron()" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -79,8 +79,8 @@
                 Categories
               </a>
               <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="article.html">Latest Article</a></li>
-                <li><a class="dropdown-item" href="trending.html">Trending</a></li>
+                <li><a class="dropdown-item" href="#latest-article">Latest Article</a></li>
+                <li><a class="dropdown-item" href="#trending">Trending</a></li>
                 <li><a class="dropdown-item" href="#popular">Popular</a></li>
                 <li><a class="dropdown-item" href="#start-ups">Start Ups</a></li>
                 <li><a class="dropdown-item" href="#tech">Tech and Lifestyles</a></li>
@@ -95,10 +95,10 @@
             <i class="fa-solid fa-bell fs-3 me-5 text-light open-modal-notify"></i>
             <!-- <button class="btn btn-success open-modal py-2 px-2 border-0 rounded-3 text-light" style="font-size: 13px;">Get Started</button> -->
             <div class="account">
-              <img src="img/article-image/Avatar.png" alt="" class="account-drop" style="width: 30px; height: 30px">
+              <img src="img/landing-page-image/Avatar.png" alt="" class="account-drop" style="width: 30px; height: 30px">
               <div class="">
                 <ul class="account-list position-absolute mt-3 bg-white px-1 ps-1">
-                  <a href="account-user.html" class="text-decoration-none text-dark">
+                  <a href="account.html" class="text-decoration-none text-dark">
                     <li class="">
                       <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-3">
                         <img src="img/landing-page-image/logout.png" alt="" width="23px">
@@ -110,16 +110,16 @@
                   <a href="bookmark.html" class="text-decoration-none text-dark">
                     <li>
                       <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-3">
-                        <img src="img/article-image/logout.png" alt="" width="23px">
+                        <img src="img/landing-page-image/logout.png" alt="" width="23px">
                         <p class="py-3 fs-5 mb-0 me-auto ms-2">Bookmark</p>
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
                     </li>
                   </a>
-                  <a href="account-user.html" class="text-decoration-none text-dark">
+                  <a href="account.html" class="text-decoration-none text-dark">
                     <li>
                       <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-3">
-                        <img src="img/article-image/settings.png" alt="" width="23px">
+                        <img src="img/landing-page-image/settings.png" alt="" width="23px">
                         <p class="py-3 fs-5 mb-0 me-auto ms-2">Settings</p>
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
@@ -127,7 +127,7 @@
                   </a>
                     <li>
                       <div class="d-flex justify-content-between align-items-center ps-4 pe-3 log-out open-modal-logout">
-                        <img src="img/article-image/logout.png" alt="" width="23px">
+                        <img src="img/landing-page-image/logout.png" alt="" width="23px">
                         <p class="py-3 fs-5 mb-0 me-auto ms-2">Log Out</p>
                         <i class="fa-solid fa-angle-right"></i>
                       </div>
@@ -195,7 +195,7 @@
         <h1 class="fw-bold text-light py-5 text-center">UI/UX BLOG</h1>
     </div>
   </div>
-  <div class="home-section d-flex justify-content-center" style="background-image: url(img/article-image/blog\ image\ down\ \(1\).png); background-position: center; background-size: cover;">
+  <div class="home-section d-flex align-items-center justify-content-center" style="background-image: url(img/article-image/blog\ image\ down\ \(1\).png); background-position: center; background-size: cover;">
     <a href="index.html" class="nav-link py-3 fw-bold fs-5" style="color: #FFF;">HOME</a>
     <a href="trending.html" class=" nav-link py-3 fw-bold fs-5 ms-2" style="color: #FFF;">» TRENDING</a> 
     <a href="kodehauz.com" class=" nav-link py-3 fw-bold fs-5 ms-2" style="color: #FFF;">»  UI/UX BLOG</a> 
@@ -212,7 +212,7 @@
               <p>32K</p>
              </div>
             <div>
-              <i class=" book fa-solid fa-bookmark fs-3  Iconography" onclick="bookmarkBtn()"></i>
+              <i class="book fa-solid fa-bookmark fs-3  Iconography" onclick="bookmarkBtn()"></i>
               <p>12K</p>
             </div>
             <div>
@@ -221,7 +221,7 @@
             </div>
           </div>
           <div class=" post-box col-lg-7">
-              <img src="img/article-image/article-image.png" class=" animation img-fluid" alt="">
+              <img src="img/article-image/article-image.png" class="move img-fluid" alt="">
               <div class="d-flex fs-6 py-2" style="color: #828282;">
                   <p class="mx-2">June 26, 2022</p>
                   <p class="fw-bold">·</p>
@@ -231,47 +231,15 @@
                   <h3 class="fw-bold fs-2" style="color: #042554;">The title of the article or heading should be here</h3>
               </div>
               <div class="button- py-3">
-                  <div class="row">
-                      <div class="col-lg-2 col-md-4 col-sm-5 mb-3">
-                          <a href="kodehauz.com" class="btn btn-primary fs-6  latest-article-size me-1 py-1 px-3 " style="border-radius: 8px;  background-color: #86B7FE !important;">#Figma</a>
-                      </div>
-                      <div class="col-lg-2 col-md-4 col-sm-5 mb-3">
-                          <a href="kodehauz.com" class="btn btn-success fs-6  latest-article-size me-1 py-1 px-3" style="border-radius: 8px; background-color: #B3CF80 !important">#UI/UX</a>                      
-                      </div>
-                      <div class="col-lg-2 col-md-4 col-sm-5 mb-3">
-                          <a href="kodehauz.com" class="btn btn-primary fs-6  latest-article-size me-1 py-1" style="border-radius: 8px; background-color: #86B7FE !important;">#fintech</a>                               
-                      </div>
-                      <div class="col-lg-2 col-md-4 col-sm-5 mb-3">
-                          <a href="kodehauz.com" class="btn btn-success fs-6  latest-article-size me-1 py-1" style="border-radius: 8px; background-color: #B3CF80 !important">#Features</a>                            
-                      </div>
-                      <div class="col-lg-2 col-md-4 col-sm-5 mb-3">
-                          <a href="kodehauz.com" class="btn btn-primary fs-6  latest-article-size me-1 py-1" style="border-radius: 8px; background-color: #86B7FE !important;">#Design</a>
-                      </div>
+                  <div class="d-flex justify-content-between align-items-center w-50 d-none d-lg-block d-md-block">
+                      <button class="btn btn-primary p-1 px-2 rounded-3" style="font-size: 13px;">#Figma</button>
+                      <button class="btn btn-success p-1 px-2 rounded-3 mx-2" style="font-size: 13px;">#UI/UX</button>
+                      <button class="btn btn-primary p-1 px-2 rounded-3 mx-2" style="font-size: 13px;">#Fintech</button>
+                      <button class="btn btn-success p-1 px-2 rounded-3 mx-2" style="font-size: 13px;">#Features</button>
+                      <button class="btn btn-primary p-1 px-2 rounded-3" style="font-size: 13px;">#Design</button>
                   </div>
               </div>
 
-               <!-- blog audio -->
-
-                    <!-- <div class="audio-container">
-                        <div class="track-name">Track Name</div>
-
-                        <div class="audio"></div>
-
-                        <div class="buttons">
-                            <span class="play-btn audio-btn playing">
-                                <i class="fa-solid fa-play"></i>
-                                <i class="fa-solid fa-pause"></i>
-                            </span>
-                            <span class="stop-btn audio-btn">
-                                <i class="fa-solid fa-stop"></i>
-                            </span>
-                            <span class="mute-btn audio-btn muted">
-                                <i class="fa-solid fa-volume-high"></i>
-                                <i class="fa-solid fa-volume-mute"></i>
-                            </span>
-                            <input type="range" min="0" max="10" step="1" value="0.5" class="volum-slider">
-                        </div>
-                    </div> -->
                     <div class="blog-audio">
                       <div class="audio">
                     <audio controls>
@@ -311,12 +279,12 @@
                   <h5 class="fw-bold py-3">Related Posts</h5>
                  </div>
                  <div class=" post-box container-fluid ">
-                  <div class="card mb-3 animation" style="border-radius: 8px; background-color: #F2F3F5;" >
-                      <div class="row g-0">
-                        <div class="col-md-4">
-                          <img src="img/article-image/post image.png" class=" animation img-fluid rounded-start" style="height: 200px;" alt="...">
+                  <div class="card border-0 shadow mb-3" style="border-radius: 8px; background-color: #F2F3F5;" >
+                      <div class="row border-0 g-0">
+                        <div class="col-lg-5 col-md-5 col-12 animation">
+                          <img src="img/article-image/side-image-1.png" class=" animation img-fluid rounded-start w-100 h-auto" style="height: 200px;" alt="...">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-lg-7 col-md-7 col-12">
                           <div class="card-body">
                             <h5 class="card-title">UI/UX Design</h5>
                             <div class="d-flex " style="color: #828282;">
@@ -335,54 +303,52 @@
                     </div>
                  </div>
                  <div class=" post-box container-fluid">
-                  <div class="card mb-3  animation" style="border-radius: 8px; background-color: #F2F3F5;" >
-                      <div class="row g-0"> 
-                        <div class="col-md-4">
-                          <img src="img/article-image/post image.png" class=" animation img-fluid rounded-start" style="height: 200px;" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="card-title">UI/UX Design</h5>
-                            <div class="d-flex " style="color: #828282;">
-                              <p class="" style="font-size: 10px;">June 26, 2022</p>
-                              <p class="" style="font-size: 10px;">·</p>
-                              <p class="" style="font-size: 10px;">5mins read</p>
-                            </div>
-                            <h6 class="fw-bold" style="color: #042554;">The title of the article or 
-                              heading should be here</h6>
-                              <a href="#" class="text-decoration-none"><div class="d-flex">
-                                  <a href="article.html" class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</a> 
-                                  <i class="bi bi-arrow-right m3-4 mb-3"></i>
-                              </div></a>
+                  <div class="card border-0 shadow mb-3" style="border-radius: 8px; background-color: #F2F3F5;" >
+                    <div class="row border-0 g-0">
+                      <div class="col-lg-5 col-md-5 col-12 animation">
+                        <img src="img/article-image/side-image-2.png" class=" animation img-fluid rounded-start w-100 h-auto" style="height: 200px;" alt="...">
+                      </div>
+                      <div class="col-lg-7 col-md-7 col-12">
+                        <div class="card-body">
+                          <h5 class="card-title">UI/UX Design</h5>
+                          <div class="d-flex " style="color: #828282;">
+                            <p class="" style="font-size: 10px;">June 26, 2022</p>
+                            <p class="" style="font-size: 10px;">·</p>
+                            <p class="" style="font-size: 10px;">5mins read</p>
                           </div>
+                          <h6 class="fw-bold" style="color: #042554;">The title of the article or heading should be here</h6>
+                            <a href="#" class="text-decoration-none"><div class="d-flex">
+                              <a href="article.html" class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</a> 
+                              <i class="bi bi-arrow-right m3-4 mb-3"></i>
+                            </div></a>
                         </div>
                       </div>
                     </div>
+                  </div>
                  </div>
                  <div class=" post-box container-fluid ">
-                  <div class="card mb-3 animation" style="border-radius: 8px; background-color: #F2F3F5;" >
-                      <div class="row g-0">
-                        <div class="col-md-4">
-                          <img src="img/article-image/post image.png" class=" animation img-fluid rounded-start" style="height: 200px;" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="card-title">UI/UX Design</h5>
-                            <div class="d-flex " style="color: #828282;">
-                              <p class="" style="font-size: 10px;">June 26, 2022</p>
-                              <p class="" style="font-size: 10px;">·</p>
-                              <p class="" style="font-size: 10px;">5mins read</p>
-                            </div>
-                            <h6 class="fw-bold" style="color: #042554;">The title of the article or 
-                              heading should be here</h6>
-                              <a href="#" class="text-decoration-none"><div class="d-flex">
-                                <a href="article.html" class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</a> 
-                                <i class="bi bi-arrow-right m3-4 mb-3"></i>
-                              </div></a>
+                  <div class="card border-0 shadow mb-3" style="border-radius: 8px; background-color: #F2F3F5;" >
+                    <div class="row border-0 g-0">
+                      <div class="col-lg-5 col-md-5 col-12 animation">
+                        <img src="img/article-image/side-image-3.png" class=" animation img-fluid rounded-start w-100 h-auto" style="height: 200px;" alt="...">
+                      </div>
+                      <div class="col-lg-7 col-md-7 col-12">
+                        <div class="card-body">
+                          <h5 class="card-title">UI/UX Design</h5>
+                          <div class="d-flex " style="color: #828282;">
+                            <p class="" style="font-size: 10px;">June 26, 2022</p>
+                            <p class="" style="font-size: 10px;">·</p>
+                            <p class="" style="font-size: 10px;">5mins read</p>
                           </div>
+                          <h6 class="fw-bold" style="color: #042554;">The title of the article or heading should be here</h6>
+                            <a href="#" class="text-decoration-none"><div class="d-flex">
+                              <a href="article.html" class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</a> 
+                              <i class="bi bi-arrow-right m3-4 mb-3"></i>
+                            </div></a>
                         </div>
                       </div>
                     </div>
+                  </div>
                  </div>
                  </div>
                    
@@ -391,80 +357,37 @@
                    <div class="container-fluid pt-5 d-none d-sm-block" style="background-color: #F2F3F5;">
                       <div >
                           <h3 class="fw-bold my-3">Tags</h3>
-                         <div class="row ">
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #B3CF80 !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #86B7FE  !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size py-1" style="border-radius: 8px; background-color: #B3CF80 !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #86B7FE  !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #86B7FE  !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #B3CF80 !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #86B7FE  !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #B3CF80 !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #B3CF80 !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #86B7FE  !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="#" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #B3CF80 !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #86B7FE  !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #86B7FE  !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #B3CF80 !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #86B7FE  !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #B3CF80 !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="#" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #B3CF80 !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #86B7FE  !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #B3CF80 !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="#" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #86B7FE  !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #86B7FE  !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #B3CF80 !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #86B7FE  !important">#Figma</a>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                              <a href="kodehauz.com" class="btn btn-success latest-article-size  py-1" style="border-radius: 8px; background-color: #B3CF80 !important">#Figma</a>
-                          </div>
-                         </div>
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
                         </div>
                    </div>
               </div>
@@ -476,7 +399,7 @@
  <!-- Comment section -->
  <div class="container">
   <div class="comment-sec">
-      <h1>Leave A Comment</h1>
+      <h3>Leave A Comment</h3>
       <div class="form bg-light p-4 rounded">
           <input type="text" placeholder="Enter your name" class="name p-2 rounded col-12">
           <div class="input-group d-flex">
@@ -732,7 +655,7 @@
   <section id="footer" class="py-5 py-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-6 mx-auto">
+            <div class="col-lg-3 col-md-3 col-12 mx-auto">
                 <div class="card bg-transparent border-0">
                     <img src="img/article-image/logo.png" alt="" class="w-25 h-25 mb-2">
                     <p class="text-light"><i class="fa-solid fa-phone"></i> +(234) 810 950 7906</p>
@@ -764,7 +687,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-6 mx-auto">
+            <div class="col-lg-3 col-md-3 col-12 mx-auto">
                 <div class="card bg-transparent border-0">
                     <h5 class="text-light">FOLLOW US</h5>
                     <ul class="list-group list-group-flush">

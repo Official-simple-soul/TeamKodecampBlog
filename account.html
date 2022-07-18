@@ -196,7 +196,7 @@
             </div>
             <div
               style="background-color: white"
-              class="d-flex align-items-center acc justify-content-between one border-bottom rounded account-select"
+              class="d-flex align-items-center acc on-load justify-content-between one border-bottom rounded account-select"
             >
               <p class="pt-3 ps-2">User Management</p>
               <i class="bx bxs-chevron-right pe-3"></i>
@@ -226,27 +226,34 @@
                 <input
                   style="background-color: #e0e0e0"
                   class="p-2 w-100 rounded border-0 text-black"
+                  id="disabledInput"
                   type="text"
                   placeholder="Omorinsola Toluwalope"
+                  disabled
+                />
+              </div>
+              <div class="mb-3 pb-3 w-75">
+                <label></label>
+                <input
+                  style="background-color: #e0e0e0"
+                  class="p-2 w-100 rounded disable border-0 text-black"
+                  id="disabledInput"
+                  type="email"
+                  placeholder="Omorinsolatoluwalope@gmail.com"
+                  disabled
                 />
               </div>
               <div class="w-75">
-                <label></label>
-                <input
-                  style="background-color: #e0e0e0"
-                  class="p-2 w-100 rounded border-0 text-black"
-                  type="text"
-                  placeholder="Female"
-                />
-              </div>
-              <div class="mb-3 border-bottom pb-3 w-75">
-                <label></label>
-                <input
-                  style="background-color: #e0e0e0"
-                  class="p-2 w-100 rounded border-0 text-black"
-                  type="email"
-                  placeholder="Omorinsolatoluwalope@gmail.com"
-                />
+                <div class="d-flex justify-content-center align-items-center p-2 rounded-3" style="background-color: #e0e0e0; font-size: 12px;">
+                  <button class="btn py-1 border-primary text-primary" style="background-color: rgba(173, 216, 230, 0.774);">interest</button>
+                  <button class="btn mx-1 py-1 border-primary text-primary" style="background-color: rgba(173, 216, 230, 0.774);">interest</button>
+                  <button class="btn mx-1 py-1 border-primary text-primary" style="background-color: rgba(173, 216, 230, 0.774);">interest</button>
+                  <button class="btn mx-1 py-1 border-primary text-primary" style="background-color: rgba(173, 216, 230, 0.774);">interest</button>
+                  <button class="btn py-1 border-primary text-primary" style="background-color: rgba(173, 216, 230, 0.774);">interest</button>
+                </div>
+                <div class="border-bottom pb-3 mt-3">
+                  <button class="btn-primary btn">Edit Interest</button>
+                </div>
               </div>
               <h6 class="fw-bold">Deactivate Account</h6>
               <h6 class="account-paragraph2">

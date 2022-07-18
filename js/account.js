@@ -6,6 +6,7 @@ let val = document.querySelectorAll(".val");
 let one = document.querySelector(".one");
 let two = document.querySelector(".two");
 let three = document.querySelector(".three");
+let onload = document.querySelector(".on-load");
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
@@ -19,6 +20,8 @@ for (let i = 0; i < acc.length; i++) {
         one.style.backgroundColor = "#CFE2FF";
         two.style.backgroundColor = "white";
         three.style.backgroundColor = "white";
+        
+
     }
 
     else if (value === "Language Settings") {
@@ -29,6 +32,7 @@ for (let i = 0; i < acc.length; i++) {
         one.style.backgroundColor = "white";
         two.style.backgroundColor = "#CFE2FF";
         three.style.backgroundColor = "white";
+        onload.classList.remove("on-load");
     }
 
     else if (value === "Notification Settings") {
@@ -39,6 +43,7 @@ for (let i = 0; i < acc.length; i++) {
         one.style.backgroundColor = "white";
         two.style.backgroundColor = "white";
         three.style.backgroundColor = "#CFE2FF";
+        onload.classList.remove("on-load");
     }
 
     else {
