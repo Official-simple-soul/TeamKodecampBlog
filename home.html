@@ -8,6 +8,7 @@
 
   <!-- styling -->
   <link rel="stylesheet" href="Swiper/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/landing-page.css" />
 
@@ -225,7 +226,7 @@
       <h4 class="fw-bolder">Latest Article</h4>
       <div class="row justify-content-between">
         <div class="col-lg-5 mb-4">
-          <div class="card rounded-top border-0 shadow">
+          <div class="card rounded-top border-0 shadow" data-aos="fade-left">
             <div class="card rounded-top">
               <img src="img/landing-page-image/left-image-full.png" alt="" class="image-fluid position-relativ zoom" />
               <img src="img/landing-page-image/Play Button.png" alt="" class="play position-absolute" />
@@ -272,7 +273,7 @@
           </button>
         </div>
         <div class="col-lg-7">
-          <div class="card border-0 bg-transparent shadow">
+          <div class="card border-0 bg-transparent shadow"  data-aos="fade-left">
             <div class="row" style="background-color: white">
               <div class="col-lg-6 col-md-6">
                 <div class="card bg-transparent border-0 rounded-left">
@@ -1399,6 +1400,10 @@
   <script src="js/app.js"></script>
   <script src="js/landing-page.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
