@@ -1,21 +1,21 @@
 const commentArray = [
-    {
-        name: 'John Doe',
-        date: '13 December 2020 - 19:35',
-        comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam massa at quam congue, idea ullamcorper orci ipsumer dolor sit amet, consectetur adipiscing elit. Duis aliquam massa at quam congue, id ullamcorper orci interdum. Sed pretium diam orciinterdum.'
-    },
+  {
+    name: "John Doe",
+    date: "13 December 2020 - 19:35",
+    comment: "This is quite interesting. I wasn’t aware UX entails more.",
+  },
 
-    {
-        name: 'Samuel Jack',
-        date: '13 December 2020 - 19:35',
-        comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam massa at quam congue, idea ullamcorper orci ipsumer dolor sit amet, consectetur adipiscing elit. Duis aliquam massa at quam congue, id ullamcorper orci interdum. Sed pretium diam orciinterdum.'
-    },
+  {
+    name: "Samuel Jack",
+    date: "13 December 2020 - 19:35",
+    comment: "This is quite interesting. I wasn’t aware UX entails more.",
+  },
 
-    {
-        name: 'Vicomour Drake',
-        date: '13 December 2020 - 19:35',
-        comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam massa at quam congue, idea ullamcorper orci ipsumer dolor sit amet, consectetur adipiscing elit. Duis aliquam massa at quam congue, id ullamcorper orci interdum. Sed pretium diam orciinterdum.'
-    }
+  {
+    name: "Vicomour Drake",
+    date: "13 December 2020 - 19:35",
+    comment: "Interesting read.",
+  },
 ];
 
 
@@ -72,7 +72,7 @@ displayItems();
 //to create a new comment
 //selection of input items and button
 const personName = document.querySelector('.name');
-const input = document.querySelector('.input');
+const commentInput = document.querySelector('.input');
 const btn = document.querySelector('.button');
 
 
@@ -80,15 +80,15 @@ const btn = document.querySelector('.button');
 btn.addEventListener('click', addComment);
 
 function addComment() {
-    if (input.value !== '') {
+    if (commentInput.value !== "") {
         commentArray.unshift({
-            name: personName.value,
-            date: Date(),
-            comment: input.value
-        })
-        
-        personName.value = '';
-        input.value = '';
+        name: personName.value,
+        date: Date(),
+        comment: commentInput.value,
+      });
+
+      personName.value = "";
+      commentInput.value = "";
     }
     displayItems();
     replyInput();

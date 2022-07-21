@@ -11,7 +11,9 @@ const modal = document.querySelector(".popup-content");
 const modalParent = document.querySelector(".popup");
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-modal");
-const btnsOpenModal = document.querySelector(".open-modal");
+const btnsOpenModal = document.querySelectorAll(".open-modal");
+const leave  = document.querySelector(".leave");
+const leaveBtn = document.querySelector(".leavebtn");
 
 const toggleModal = function () {
   modal.classList.toggle("hidden");
@@ -19,7 +21,9 @@ const toggleModal = function () {
   modalParent.classList.toggle("hidden");
 };
 
-btnsOpenModal.addEventListener("click", toggleModal);
+for (let i = 0; i < btnsOpenModal.length; i++) {
+  btnsOpenModal[i].addEventListener("click", toggleModal);
+}
 
 btnCloseModal.addEventListener("click", toggleModal);
 overlay.addEventListener("click", toggleModal);
@@ -72,13 +76,6 @@ sideDrop.addEventListener('click', function() {
 }
 )
 
-const please = document.querySelectorAll('.please');
-
-console.log(please);
-
-for (let i = 0; i < please.length; i++) {
-  please[i].addEventListener('click', () => {
-    window.alert('Please login or sign up to have access to this feature');
-  }
-  )
-}
+leaveBtn.addEventListener('click', function() {
+  leave.classList.toggle('leaveNow');
+})

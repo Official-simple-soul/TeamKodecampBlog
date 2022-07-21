@@ -9,3 +9,8 @@
     -webkit-text-stroke: 2px black;
     cursor: pointer;
 }
+
+.leaveNow {
+    display: none;
+    z-index: -50;
+}

@@ -71,7 +71,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto">
             <li class="nav-item active">
-              <a class="nav-link text-primary mx-2" href="home.html">Browse <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-dark mx-2" href="home.html">Browse <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark mx-2" href="trending.html">Trending</a>
@@ -159,10 +159,14 @@
         <div class="notification">
           <div class="notification-text">
             <p class="text-start fw-bold">Notification</p>
-            <p class="text-end markall" style="font-size: 10px;">Mark all as read</p>
+            <div class="notif-head d-flex justify-content-between">
+              <i class="mute fa-solid fa-volume-xmark" dataset="toggle-icons"></i>
+              <i class="unmute fa-solid fa-volume-high"></i>
+              <p class="markall" style="font-size: 10px;">Mark all as read</p>
+            </div>
           </div>
           <span class="notification-details">
-            
+  
           </span>
         </div>
       </div>
@@ -205,10 +209,10 @@
       >
       <div class="home-links d-flex justify-content-center">
           <a href="home.html" class="text-decoration-none">
-              <h4 class=" pt-5  text-center"> HOME » </h4>
+              <h6 class=" pt-5  text-center"> HOME » </h6>
           </a>
           <a href="bookmark.html" class="text-decoration-none">
-              <h4 class=" pt-5  text-center"> BOOKMARK</h4>
+              <h6 class=" pt-5  text-center"> BOOKMARK</h6>
           </a>
       </div>
   </div>
@@ -331,21 +335,19 @@
                   <div class="col-lg-6 col-md-6">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title" style="font-size: 12px">
-                          Career in Tech
+                        <h5 class="card-title text-dark" >
+                            UI/UX Design
                         </h5>
-                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
-                        <h6 class="my-1">
-                          The title of the article or heading should be here
-                        </h6>
-                        <p class="card-text text-muted" style="font-size: 10px">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                          Excepturi eligendi deleniti omnis exercitationem quia?
-                          Doloremque eum sunt
+                        <small class="" style="font-size: 12px; color:#BDBDBD ;">June 26, 2022 . 5mins read</small>
+                        <h5 class="my-1 fw-bolder" style="color: #042554;">
+                          Creating Style Guide
+                        </h5>
+                        <p class="card-text text-dark" style="font-size: 14px">
+                          Style guides inform your design. They make everything easily accessible.
                         </p>
                         <div class="d-flex flex-wrap">
-                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1"style="opacity: 0.6;">Figma</a>
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1"style="opacity: 0.6;">#UI/UX</a>
                         </div>
                       </div>
                       <div
@@ -363,12 +365,12 @@
                     <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                       </div>
                       <a href="#" class="text-decoration-none"
-                        ><div class="d-flex">
+                        ><div class="d-flex align-items-center">
                           <p class="text-primary me-2 mb-0" style="font-size: 12px">
-                            <a href="article.html" class="text-decoration-none">Read more</a>
+                            <a href="article.html" class="text-decoration-none ">Read more</a>
                           </p>
                           <i
-                            class="fa-solid fa-arrow-right-long fs-4 text-primary"
+                            class="fa-solid fa-arrow-right-long fs-4 text-primary "
                           ></i></div
                       ></a>
                     </div>
@@ -384,21 +386,19 @@
                   <div class="col-lg-6 col-md-6">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title" style="font-size: 12px">
-                          Career in Tech
+                        <h5 class="card-title text-dark" >
+                          UI/UX Design
                         </h5>
-                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
-                        <h6 class="my-1">
-                          The title of the article or heading should be here
-                        </h6>
-                        <p class="card-text text-muted" style="font-size: 10px">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                          Excepturi eligendi deleniti omnis exercitationem quia?
-                          Doloremque eum sunt
+                        <small class="" style="font-size: 12px; color: #BDBDBD;">June 26, 2022 . 5mins read</small>
+                        <h5 class="my-1 fw-bolder" style="color: #042554;">
+                         AR and VR
+                        </h5>
+                        <p class="card-text text-dark" style="font-size: 14px">
+                          Let’s explore the world of virtual reality
                         </p>
                         <div class="d-flex flex-wrap">
-                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity: 0.6;">Figma</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity: 0.6;">#UI/UX</a>
                         </div>
                       </div>
                       <div
@@ -416,7 +416,7 @@
                     <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                       </div>
                       <a href="#" class="text-decoration-none"
-                        ><div class="d-flex">
+                        ><div class="d-flex align-items-center">
                           <p class="text-primary me-2 mb-0" style="font-size: 12px">
                             <a href="article.html" class="text-decoration-none">Read more</a>
                           </p>
@@ -437,21 +437,19 @@
                   <div class="col-lg-6 col-md-6">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title" style="font-size: 12px">
-                          Career in Tech
+                        <h5 class="card-title text-dark">
+                          UI/UX Design
                         </h5>
-                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
-                        <h6 class="my-1">
-                          The title of the article or heading should be here
-                        </h6>
-                        <p class="card-text text-muted" style="font-size: 10px">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                          Excepturi eligendi deleniti omnis exercitationem quia?
-                          Doloremque eum sunt
+                        <small class="" style="font-size: 12px; color: #BDBDBD;">June 26, 2022 . 5mins read</small>
+                        <h5 class="my-1 fw-bolder"  style="color: #042554;">
+                          The Slithering Python
+                        </h5>
+                        <p class="card-text text-dark" style="font-size: 14px">
+                          Every programmer probably started learning programming languages with Python. And no, this is not Harry Potter.
                         </p>
                         <div class="d-flex flex-wrap">
-                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity:0.6 ;">Figma</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity:0.6 ;">#UI/UX</a>
                         </div>
                       </div>
                       <div
@@ -469,7 +467,7 @@
                     <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                       </div>
                       <a href="#" class="text-decoration-none"
-                        ><div class="d-flex">
+                        ><div class="d-flex align-items-center">
                           <p class="text-primary me-2 mb-0" style="font-size: 12px">
                             <a href="article.html" class="text-decoration-none">Read more</a>
                           </p>
@@ -490,21 +488,19 @@
                   <div class="col-lg-6 col-md-6">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title" style="font-size: 12px">
-                          Career in Tech
+                        <h5 class="card-title text-dark">
+                          UI/UX Design
                         </h5>
-                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
-                        <h6 class="my-1">
-                          The title of the article or heading should be here
-                        </h6>
-                        <p class="card-text text-muted" style="font-size: 10px">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                          Excepturi eligendi deleniti omnis exercitationem quia?
-                          Doloremque eum sunt
+                        <small class="" style="font-size: 12px; color: #BDBDBD;">June 26, 2022 . 5mins read</small>
+                        <h5 class="my-1 fw-bolder" style="color:#042554;">
+                          How To Transition To Technical Writing
+                        </h5>
+                        <p class="card-text text-dark" style="font-size: 14px">
+                          Ever read an article or a manual that simplifies technicall jargon? Technical writ.....
                         </p>
                         <div class="d-flex flex-wrap">
-                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity: 0.6;">Figma</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity: 0.6;">#UI/UX</a>
                         </div>
                       </div>
                       <div
@@ -522,7 +518,7 @@
                     <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                       </div>
                       <a href="#" class="text-decoration-none"
-                        ><div class="d-flex">
+                        ><div class="d-flex align-items-center">
                           <p class="text-primary me-2 mb-0" style="font-size: 12px">
                             <a href="article.html" class="text-decoration-none">Read more</a>
                           </p>
@@ -543,21 +539,19 @@
                     <img src="img/bookmark-tech-1-page-image/Image.png" alt="" class="image-fluid zoom" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title mb-1">Career in Tech</h5>
-                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
-                    <h6 class="my-2">
-                      The title of the article or heading should be here
-                    </h6>
-                    <p class="card-text text-muted" style="font-size: 12px">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Excepturi eligendi deleniti omnis exercitationem quia?
-                      Doloremque eum sunt
+                    <h5 class="card-title mb-1 text-dark">UI/UX Design</h5>
+                    <small class="" style="font-size: 12px; color: #BDBDBD;">June 26, 2022 . 5mins read</small>
+                    <h5 class="my-2 fw-bolder" style="color: #042554;">
+                      Creating Style Guide
+                    </h5>
+                    <p class="card-text text-dark" style="font-size: 14px">
+                      Style guides inform your design. They make everything easily accessible.
                     </p>
                     <div class="d-flex flex-wrap">
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity: 0.6 ;">#Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity: 0.6 ;">#UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity: 0.6 ;">#Fintech</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity: 0.6 ;">#Design</a>
                     </div>
                   </div>
                   <div
@@ -575,7 +569,7 @@
                 <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                   </div>
                   <a href="#" class="text-decoration-none"
-                    ><div class="d-flex">
+                    ><div class="d-flex align-items-center">
                       <p class="text-primary me-2 mb-0" style="font-size: 12px">
                         <a href="article.html" class="text-decoration-none">Read more</a>
                       </p>
@@ -592,21 +586,19 @@
                     <img src="img/bookmark-tech-1-page-image/Image (1).png" alt="" class="image-fluid zoom" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title mb-1">Career in Tech</h5>
-                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
-                    <h6 class="my-2">
-                      The title of the article or heading should be here
-                    </h6>
-                    <p class="card-text text-muted" style="font-size: 12px">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Excepturi eligendi deleniti omnis exercitationem quia?
-                      Doloremque eum sunt
+                    <h5 class="card-title mb-1 text-dark">UI/UX Design</h5>
+                    <small class="" style="font-size: 12px; color: #BDBDBD;">June 26, 2022 . 5mins read</small>
+                    <h5 class="my-2 fw-bolder" style="color: #042554;">
+                      AR and VR
+                    </h5>
+                    <p class="card-text text-dark" style="font-size: 14px; margin-top: 22px;">
+                      Let’s explore the world of Virtual Reality
                     </p>
-                    <div class="d-flex flex-wrap">
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                    <div class="d-flex flex-wrap" style="margin-top: 22px;">
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity:0.6 ;">#Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity:0.6 ;">#UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity:0.6 ;">#Fintech</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity:0.6 ;">#Design</a>
                     </div>
                   </div>
                   <div
@@ -624,7 +616,7 @@
                 <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                   </div>
                   <a href="#" class="text-decoration-none"
-                    ><div class="d-flex">
+                    ><div class="d-flex align-items-center">
                       <p class="text-primary me-2 mb-0" style="font-size: 12px">
                         <a href="article.html" class="text-decoration-none">Read more</a>
                       </p>
@@ -641,21 +633,19 @@
                     <img src="img/bookmark-tech-1-page-image/Image (2).png" alt="" class="image-fluid zoom" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title mb-1">Career in Tech</h5>
-                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
-                    <h6 class="my-2">
-                      The title of the article or heading should be here
-                    </h6>
-                    <p class="card-text text-muted" style="font-size: 12px">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Excepturi eligendi deleniti omnis exercitationem quia?
-                      Doloremque eum sunt
+                    <h5 class="card-title mb-1 text-dark">UI/UX Design</h5>
+                    <small class="" style="font-size: 12px; color: #BDBDBD;">June 26, 2022 . 5mins read</small>
+                    <h5 class="my-2 fw-bolder" style="color: #042554;">
+                      The Slithering Python
+                    </h5>
+                    <p class="card-text text-dark" style="font-size: 14px">
+                      Every programmer probably started learning programming languages with Python. And no, this is not Harry Potter.
                     </p>
                     <div class="d-flex flex-wrap">
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity:0.6 ;">#Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity:0.6 ;">#UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity:0.6 ;">#Fintech</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity:0.6 ;">#Design</a>
                     </div>
                   </div>
                   <div
@@ -673,7 +663,7 @@
                 <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                   </div>
                   <a href="#" class="text-decoration-none"
-                    ><div class="d-flex">
+                    ><div class="d-flex align-items-center">
                       <p class="text-primary me-2 mb-0" style="font-size: 12px">
                         <a href="article.html" class="text-decoration-none">Read more</a>
                       </p>
@@ -690,21 +680,19 @@
                     <img src="img/bookmark-tech-1-page-image/Image (3).png" alt="" class="image-fluid zoom" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title mb-1">Career in Tech</h5>
-                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
-                    <h6 class="my-2">
-                      The title of the article or heading should be here
-                    </h6>
-                    <p class="card-text text-muted" style="font-size: 12px">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Excepturi eligendi deleniti omnis exercitationem quia?
-                      Doloremque eum sunt
+                    <h5 class="card-title mb-1 text-dark">UI/UX Design</h5>
+                    <small class="" style="font-size: 12px; color: #BDBDBD;">June 26, 2022 . 5mins read</small>
+                    <h5 class="my-2 fw-bolder" style="color: #042554;">
+                      How To Transition To Technical Writing
+                    </h5>
+                    <p class="card-text text-dark" style="font-size: 14px">
+                      Ever read an article or a manual that simplifies technicall jargon? Technical writ.....
                     </p>
                     <div class="d-flex flex-wrap">
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity: 0.6;">#Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity: 0.6;">#UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity: 0.6;">#Fintech</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity: 0.6;">#Design</a>
                     </div>
                   </div>
                   <div
@@ -722,7 +710,7 @@
                 <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                   </div>
                   <a href="#" class="text-decoration-none"
-                    ><div class="d-flex">
+                    ><div class="d-flex align-items-center">
                       <p class="text-primary me-2 mb-0" style="font-size: 12px">
                         <a href="article.html" class="text-decoration-none">Read more</a>
                       </p>
@@ -752,21 +740,21 @@
                   <div class="col-lg-6 col-md-6">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title" style="font-size: 12px">
+                        <h5 class="card-title text-dark" >
                           Career in Tech
                         </h5>
-                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
-                        <h6 class="my-1">
+                        <small class="" style="font-size: 12px; color: #BDBDBD;">June 26, 2022 . 5mins read</small>
+                        <h5 class="my-1 fw-bolder" style="color:#042554 ;">
                           The title of the article or heading should be here
-                        </h6>
-                        <p class="card-text text-muted" style="font-size: 10px">
+                        </h5>
+                        <p class="card-text text-dark" style="font-size: 14px">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit.
                           Excepturi eligendi deleniti omnis exercitationem quia?
                           Doloremque eum sunt
                         </p>
                         <div class="d-flex flex-wrap">
-                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity:0.6 ;">#Figma</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity:0.6 ;">#UI/UX</a>
                         </div>
                       </div>
                       <div
@@ -784,7 +772,7 @@
                     <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                       </div>
                       <a href="#" class="text-decoration-none"
-                        ><div class="d-flex">
+                        ><div class="d-flex align-items-center">
                           <p class="text-primary me-2 mb-0" style="font-size: 12px">
                             <a href="article.html" class="text-decoration-none">Read more</a>
                           </p>
@@ -805,21 +793,21 @@
                   <div class="col-lg-6 col-md-6">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title" style="font-size: 12px">
+                        <h5 class="card-title text-dark" >
                           Career in Tech
                         </h5>
-                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
-                        <h6 class="my-1">
+                        <small class="" style="font-size: 12px; color: #BDBDBD;">June 26, 2022 . 5mins read</small>
+                        <h5 class="my-1 fw-bolder" style="color:#042554 ;">
                           The title of the article or heading should be here
-                        </h6>
-                        <p class="card-text text-muted" style="font-size: 10px">
+                        </h5>
+                        <p class="card-text text-dark" style="font-size: 14px">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit.
                           Excepturi eligendi deleniti omnis exercitationem quia?
                           Doloremque eum sunt
                         </p>
                         <div class="d-flex flex-wrap">
-                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity:0.6 ;">#Figma</a>
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity:0.6 ;">#UI/UX</a>
                         </div>
                       </div>
                       <div
@@ -837,7 +825,7 @@
                 <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                   </div>
                   <a href="#" class="text-decoration-none"
-                    ><div class="d-flex">
+                    ><div class="d-flex align-items-center">
                       <p class="text-primary me-2 mb-0" style="font-size: 12px">
                         <a href="article.html" class="text-decoration-none">Read more</a>
                       </p>
@@ -858,21 +846,21 @@
                   <div class="col-lg-6 col-md-6">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title" style="font-size: 12px">
+                        <h5 class="card-title text-dark" >
                           Career in Tech
                         </h5>
-                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
-                        <h6 class="my-1">
+                        <small class="" style="font-size: 12px; color: #BDBDBD;">June 26, 2022 . 5mins read</small>
+                        <h5 class="my-1 fw-bolder" style="color: #042554;">
                           The title of the article or heading should be here
-                        </h6>
-                        <p class="card-text text-muted" style="font-size: 10px">
+                        </h5>
+                        <p class="card-text text-dark" style="font-size: 14px">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit.
                           Excepturi eligendi deleniti omnis exercitationem quia?
                           Doloremque eum sunt
                         </p>
                         <div class="d-flex flex-wrap">
-                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity: 0.6;">#Figma</a>
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity: 0.6;">#UI/UX</a>
                         </div>
                       </div>
                       <div
@@ -890,7 +878,7 @@
                 <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                   </div>
                   <a href="#" class="text-decoration-none"
-                    ><div class="d-flex">
+                    ><div class="d-flex align-items-center">
                       <p class="text-primary me-2 mb-0" style="font-size: 12px">
                         <a href="article.html" class="text-decoration-none">Read more</a>
                       </p>
@@ -911,21 +899,21 @@
                   <div class="col-lg-6 col-md-6">
                     <div class="card border-0">
                       <div class="card-body">
-                        <h5 class="card-title" style="font-size: 12px">
+                        <h5 class="card-title text-dark" >
                           Career in Tech
                         </h5>
-                        <small class="text-muted" style="font-size: 10px">June 26, 2022 . 5mins read</small>
-                        <h6 class="my-1">
+                        <small class="" style="font-size: 12px; color: #BDBDBD;">June 26, 2022 . 5mins read</small>
+                        <h5 class="my-1 fw-bolder" style="color:#042554 ;">
                           The title of the article or heading should be here
-                        </h6>
-                        <p class="card-text text-muted" style="font-size: 10px">
+                        </h5>
+                        <p class="card-text text-dark" style="font-size: 14px">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit.
                           Excepturi eligendi deleniti omnis exercitationem quia?
                           Doloremque eum sunt
                         </p>
                         <div class="d-flex flex-wrap">
-                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                          <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
+                          <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity: 0.6;">#Figma</a>
+                          <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity: 0.6;">#UI/UX</a>
                         </div>
                       </div>
                       <div
@@ -943,7 +931,7 @@
                 <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                   </div>
                   <a href="#" class="text-decoration-none"
-                    ><div class="d-flex">
+                    ><div class="d-flex align-items-center">
                       <p class="text-primary me-2 mb-0" style="font-size: 12px">
                         <a href="article.html" class="text-decoration-none">Read more</a>
                       </p>
@@ -964,21 +952,21 @@
                     <img src="img/bookmark-tech-1-page-image/design-book.png" alt="" class="image-fluid zoom" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title mb-1">Career in Tech</h5>
-                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
-                    <h6 class="my-2">
+                    <h5 class="card-title mb-1 text-dark">Career in Tech</h5>
+                    <small class="" style="font-size: 12px; color: #BDBDBD;">June 26, 2022 . 5mins read</small>
+                    <h5 class="my-2 fw-bolder" style="color:#042554 ;">
                       The title of the article or heading should be here
-                    </h6>
-                    <p class="card-text text-muted" style="font-size: 12px">
+                    </h5>
+                    <p class="card-text text-dark" style="font-size: 14px">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Excepturi eligendi deleniti omnis exercitationem quia?
                       Doloremque eum sunt
                     </p>
                     <div class="d-flex flex-wrap">
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity:0.6 ;">#Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity:0.6 ;">#UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity:0.6 ;">#Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity:0.6 ;">#Design</a>
                     </div>
                   </div>
                   <div
@@ -996,7 +984,7 @@
                 <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                   </div>
                   <a href="#" class="text-decoration-none"
-                    ><div class="d-flex">
+                    ><div class="d-flex align-items-center">
                       <p class="text-primary me-2 mb-0" style="font-size: 12px">
                         <a href="article.html" class="text-decoration-none">Read more</a>
                       </p>
@@ -1013,21 +1001,21 @@
                     <img src="img/bookmark-tech-1-page-image/design-vr.png" alt="" class="image-fluid zoom" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title mb-1">Career in Tech</h5>
-                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
-                    <h6 class="my-2">
+                    <h5 class="card-title mb-1 text-dark">Career in Tech</h5>
+                    <small class="" style="font-size: 12px; color: #BDBDBD;">June 26, 2022 . 5mins read</small>
+                    <h5 class="my-2 fw-bolder" style="color: #042554;">
                       The title of the article or heading should be here
-                    </h6>
-                    <p class="card-text text-muted" style="font-size: 12px">
+                    </h5>
+                    <p class="card-text text-dark" style="font-size: 14px">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Excepturi eligendi deleniti omnis exercitationem quia?
                       Doloremque eum sunt
                     </p>
                     <div class="d-flex flex-wrap">
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity:0.6 ;">#Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity:0.6 ;">#UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity:0.6 ;">#Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity:0.6 ;">#Design</a>
                     </div>
                   </div>
                   <div
@@ -1045,7 +1033,7 @@
                 <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                   </div>
                   <a href="#" class="text-decoration-none"
-                    ><div class="d-flex">
+                    ><div class="d-flex align-items-center">
                       <p class="text-primary me-2 mb-0" style="font-size: 12px">
                         <a href="article.html" class="text-decoration-none">Read more</a>
                       </p>
@@ -1062,21 +1050,21 @@
                     <img src="img/bookmark-tech-1-page-image/design-pc.png" alt="" class="image-fluid zoom" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title mb-1">Career in Tech</h5>
-                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
-                    <h6 class="my-2">
+                    <h5 class="card-title mb-1 text-dark">Career in Tech</h5>
+                    <small class="" style="font-size: 12px; color:#BDBDBD;">June 26, 2022 . 5mins read</small>
+                    <h5 class="my-2 fw-bolder" style="color: #042554;">
                       The title of the article or heading should be here
-                    </h6>
-                    <p class="card-text text-muted" style="font-size: 12px">
+                    </h5>
+                    <p class="card-text text-dark" style="font-size: 14px">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Excepturi eligendi deleniti omnis exercitationem quia?
                       Doloremque eum sunt
                     </p>
                     <div class="d-flex flex-wrap">
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity: 0.6;">#Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity: 0.6;">#UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity: 0.6;">#Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity: 0.6;">#Design</a>
                     </div>
                   </div>
                   <div
@@ -1094,7 +1082,7 @@
                 <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                   </div>
                   <a href="#" class="text-decoration-none"
-                    ><div class="d-flex">
+                    ><div class="d-flex align-items-center">
                       <p class="text-primary me-2 mb-0" style="font-size: 12px">
                         <a href="article.html" class="text-decoration-none">Read more</a>
                       </p>
@@ -1111,21 +1099,21 @@
                     <img src="img/bookmark-tech-1-page-image/design-vr.png" alt="" class="image-fluid zoom" />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title mb-1">Career in Tech</h5>
-                    <small class="text-muted" style="font-size: 12px">June 26, 2022 . 5mins read</small>
-                    <h6 class="my-2">
+                    <h5 class="card-title mb-1 text-dark">Career in Tech</h5>
+                    <small class="" style="font-size: 12px; color: #BDBDBD;">June 26, 2022 . 5mins read</small>
+                    <h5 class="my-2 fw-bolder" style="color: #042554;">
                       The title of the article or heading should be here
-                    </h6>
-                    <p class="card-text text-muted" style="font-size: 12px">
+                    </h5>
+                    <p class="card-text text-dark" style="font-size: 14px">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Excepturi eligendi deleniti omnis exercitationem quia?
                       Doloremque eum sunt
                     </p>
                     <div class="d-flex flex-wrap">
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Figma</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">UI/UX</a>
-                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1">Front-End</a>
-                      <a href="#" class="btn btn-success latest-article-size me-1 py-1">Design</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity: 0.6;">#Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity: 0.6;">#UI/UX</a>
+                      <a href="#" class="btn btn-primary latest-article-size me-1 py-1" style="opacity: 0.6;">#Figma</a>
+                      <a href="#" class="btn btn-success latest-article-size me-1 py-1" style="opacity: 0.6;">#Design</a>
                     </div>
                   </div>
                   <div
@@ -1143,7 +1131,7 @@
                 <img src="img/landing-page-image/Iconography (2).png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-4 share" />
                   </div>
                   <a href="#" class="text-decoration-none"
-                    ><div class="d-flex">
+                    ><div class="d-flex align-items-center">
                       <p class="text-primary me-2 mb-0" style="font-size: 12px">
                         <a href="article.html" class="text-decoration-none">Read more</a>
                       </p>
@@ -1381,10 +1369,10 @@
                   class="text-light text-decoration-none">About Us</a></li>
               <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#tech"
                   class="text-light text-decoration-none">Tech and Lifestyles</a></li>
-              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#business"
-                  class="text-light text-decoration-none">Business</a></li>
-              <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="trending.html"
-                  class="text-light text-decoration-none">Trending</a></li>
+                  <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="privacy.html"
+                    class="text-light text-decoration-none">Privacy Settings</a></li>
+                <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="terms-and-conditions.html"
+                    class="text-light text-decoration-none">Terms and Condition</a></li>
             </ul>
           </div>
         </div>
@@ -1439,8 +1427,9 @@
   <!-- Start of Scripts -->
 
   <script src="js/bootstrap.min.js"></script>
-  <!-- <script src="js/app.js"></script> -->
-  <script src="js/bookmark-page.js"></script>
+  <script src="js/app.js"></script>
+  <!-- <script src="js/bookmark-page.js"></script> -->
+  <script src="js/bookmark.js"></script>
 </body>
 
 </html>

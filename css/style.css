@@ -328,6 +328,23 @@ img:hover {
   font-size: 0.5rem;
 }
 
+.notif-head .unmute {
+  display: none;
+  cursor: pointer;
+}
+
+.notif-head .mute {
+  cursor: pointer;
+}
+
+.notif-icons .mute-notif {
+  display: none;
+}
+
+.notif-icons .show-mute {
+  display: block;
+}
+
 .notification-container {
   transition: 0.5s linear;
 }
@@ -395,6 +412,7 @@ img:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.3s;
   height: 100vh;
   width: 100%;
@@ -405,8 +423,6 @@ img:hover {
 }
 
 .overlay-logout {
-  background-color: rgba(0, 0, 0, 0.5);
-  /* backdrop-filter: blur(3px); */
   height: 100vh;
   width: 100%;
   position: fixed;

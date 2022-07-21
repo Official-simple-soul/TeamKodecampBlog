@@ -8,7 +8,6 @@
   <!-- styling -->
   <link rel="stylesheet" href="Swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <!-- <link rel="stylesheet" href="css/style.css"/> -->
   <link rel="stylesheet" href="css/article.css">
 
   <!-- Google fonts -->
@@ -153,10 +152,14 @@
         <div class="notification">
           <div class="notification-text">
             <p class="text-start fw-bold">Notification</p>
-            <p class="text-end markall" style="font-size: 10px;">Mark all as read</p>
+            <div class="notif-head d-flex justify-content-between">
+              <i class="mute fa-solid fa-volume-xmark" dataset="toggle-icons"></i>
+              <i class="unmute fa-solid fa-volume-high"></i>
+              <p class="markall" style="font-size: 10px;">Mark all as read</p>
+            </div>
           </div>
           <span class="notification-details">
-            
+  
           </span>
         </div>
       </div>
@@ -192,13 +195,13 @@
 
    <section id="seo-section" class="pt-5" style="background-image: url(img/article-image/blog\ image.png); background-position: center; background-size: cover;">
     <div class="seo">
-        <h1 class="fw-bold text-light py-5 text-center">UI/UX BLOG</h1>
+        <h3 class="fw-bold text-light py-4 text-center">UI/UX BLOG</h3>
     </div>
   </div>
   <div class="home-section d-flex align-items-center justify-content-center" style="background-image: url(img/article-image/blog\ image\ down\ \(1\).png); background-position: center; background-size: cover;">
-    <a href="index.html" class="nav-link py-3 fw-bold fs-5" style="color: #FFF;">HOME</a>
-    <a href="trending.html" class=" nav-link py-3 fw-bold fs-5 ms-2" style="color: #FFF;">» TRENDING</a> 
-    <a href="kodehauz.com" class=" nav-link py-3 fw-bold fs-5 ms-2" style="color: #FFF;">»  UI/UX BLOG</a> 
+    <a href="index.html" class="nav-link py-3 fw-bold" style="color: #FFF; font-size: 11px;">HOME</a>
+    <a href="trending.html" class=" nav-link py-3 fw-bold ms-2" style="color: #FFF; font-size: 11px;">» TRENDING</a> 
+    <a href="kodehauz.com" class=" nav-link py-3 fw-bold ms-2" style="color: #FFF; font-size: 11px;">»  UI/UX BLOG</a> 
     <!-- <h4 class="text-light  pt-5  text-center">HOME  »  TRENDING » UI/UX BLOG </h4> -->
   </div>
 </section>
@@ -211,6 +214,11 @@
               <img src="img/article-image/Iconography.png" alt="" class="fa-hands-clapping">
               <p>32K</p>
              </div>
+             <div>
+              <img src="img/article-image/message.png" alt=""  onclick="bookmarkBtn()" class="book fa-solid fa-bookmark fs-3  Iconography">
+              <!-- <i class="book fa-solid fa-bookmark fs-3  Iconography" onclick="bookmarkBtn()"></i> -->
+              <p>90K</p>
+            </div>
             <div>
               <i class="book fa-solid fa-bookmark fs-3  Iconography" onclick="bookmarkBtn()"></i>
               <p>12K</p>
@@ -228,48 +236,61 @@
                   <p class="ms-2">5mins read</p>
               </div>
               <div>
-                  <h3 class="fw-bold fs-2" style="color: #042554;">The title of the article or heading should be here</h3>
+                  <h3 class="fw-bold fs-2" style="color: #042554;">Doing UX the Right Way (Part 1)</h3>
               </div>
               <div class="button- py-3">
-                  <div class="d-flex justify-content-between align-items-center w-50 d-none d-lg-block d-md-block">
-                      <button class="btn btn-primary p-1 px-2 rounded-3" style="font-size: 13px;">#Figma</button>
-                      <button class="btn btn-success p-1 px-2 rounded-3 mx-2" style="font-size: 13px;">#UI/UX</button>
-                      <button class="btn btn-primary p-1 px-2 rounded-3 mx-2" style="font-size: 13px;">#Fintech</button>
-                      <button class="btn btn-success p-1 px-2 rounded-3 mx-2" style="font-size: 13px;">#Features</button>
-                      <button class="btn btn-primary p-1 px-2 rounded-3" style="font-size: 13px;">#Design</button>
+                  <div class="d-flex justify-content-between align-items-center w-75 d-none d-lg-block d-md-block">
+                      <button class="btn btn-primary p-1 px-2 border-0 rounded-3" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#Figma</button>
+                      <button class="btn btn-success p-1 px-2 border-0 rounded-3 mx-2" style="font-size: 13px;  color: #CFE2FF; background: #B3CF80;">#UI/UX</button>
+                      <button class="btn btn-primary p-1 px-2 border-0 rounded-3 mx-2" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#Fintech</button>
+                      <button class="btn btn-success p-1 px-2 border-0 rounded-3 mx-2" style="font-size: 13px;  color: #CFE2FF; background: #B3CF80;">#Features</button>
+                      <button class="btn btn-primary p-1 px-2 border-0 rounded-3" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#Design</button>
                   </div>
               </div>
 
                     <div class="blog-audio">
-                      <div class="audio">
+                      <img src="img/article-image/audio.png" alt="" width="75%" class="move">
+                      <!-- <div class="audio">
                     <audio controls>
                               <source src="audio/track1.mp3" type="audio/mp3">
                               <source src="audio/track1.ogg" type="audio/ogg">
                             Your browser does not support the audio element.
                             </audio>      
-                      </div>                   
+                      </div>                    -->
                    </div>
 
 
                     <!-- Article section -->
                     <div class="article">
-                      <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit neque pellentesque eu cursus nam id amet vitae molestie. In convallis dolor tellus donec. Tincidunt pharetra id mus velit, imperdiet lacinia ut est risus. Pellentesque imperdiet pretium facilisis amet, volutpat faucibus at in nunc. Velit nunc ac ipsum ullamcorper magna. Semper luctus lacinia scelerisque id nibh ultrices eget in nunc. Ac sed vel et id nullam id. Fringilla netus lacus, etiam elementum tortor. Risus, vitae et euismod aliquet posuere auctor. Elit sed sapien quis convallis faucibus adipiscing eu laoreet laoreet. Eget ullamcorper mus tellus ullamcorper vitae consectetur. Consectetur amet, ut volutpat lorem est, dolor egestas aliquam. Pellentesque auctor suspendisse sit in suspendisse quam. In cursus ut euismod quam.
-                      </p>
+                      <p class="mt-4">User experience is centred on the users. As UX designers, we don’t just go straight to design, we try to understand the users’ problems and find a solution for them. This process isn’t as straightforward as it sounds. UX design is iterative. It entails putting oneself in the position of the users. </p>
 
-                      <p class="mt-4">Mauris suscipit tempor vestibulum nec vitae et, non adipiscing. Nunc sed pellentesque vitae mauris diam, convallis. Auctor nam mauris elit, lobortis bibendum ultrices eget. Orci at sapien laoreet mollis auctor risus pharetra consectetur. Eu faucibus commodo, aliquet a ipsum. Lacus volutpat faucibus nisl adipiscing phasellus. Eros dui, facilisis natoque enim enim quam sed orci maecenas. Ac orci sapien, at volutpat.
-                          Placerat eu a dui enim elementumproin vitae porttitor in a sagittis lorem. Volutpat leo, faucibus consequat quisque urna. Etiam in et amet, ullamcorper nisl molestie id urna ac. Nullam egestas nunc nisl, morbi porttitor arcu. Nisi ultrices enim tempor iaculis massa eu accumsan adipiscing. Ac auctor et aenean sollicitudin nunc, eget. Dolor, risus massa iaculis tincidunt lacinia massa. Diam et sit sed a arcu sit in. Dictumst suspendisse varius volutpat nec ipsum eget elit cursus. Risus facilisis mi augue pulvinar aliquam orci sit auctor. Maecenas viverra viverra in egestas id fusce. Neque senectus praesent in fermentum tempor posuere egestas commodo ridiculus. Arcu, dictumst sodales orci turpis nisl vel vitae velit, donec.
-                          In turpis pharetra ut facilisis sed dapibus. Maecenas eget tristique nibh vitae egestas eget sit gravida. Nam mollis eu ut sed turpis interdum quis. Ut auctor ut ultrices volutpat ut volutpat. Iaculis vitae, velit, tempus amet, molestie. Ornare quis id fermentum gravida suspendisse. Quam nulla ultrices fermentum tellus mauris malesuada.
-                      </p>
-                      <p class="mt-4">
-                          Sit aliquet sit pellentesque mauris euismod et sem fringilla amet. Mattis sollicitudin elit integer laoreet arcu nunc. Vitae tellus condimentum posuere dignissim. Urna, arcu tincidunt volutpat enim. Augue libero ultricies et a turpis varius cras. Turpis mauris nullam et senectus egestas malesuada nam cursus. Eget enim sem est vel tempus. Semper egestas sit facilisis posuere sed enim facilisi risus pretium.
-                          Malesuada bibendum eget pulvinar sed tortor eget sednec. Eget tempor orci ac auctor feugiat diam. Pulvinar ultrices pharetra, sagittis eleifend neque dignissim viverra. Duis diam, sed ut donec mauris, sit nunc enim. Nunc dis orci, imperdiet urna pretium. Rhoncus velit tortor egestas pellentesque donec tempus, sit vitae, at. Orci elementum adipiscing sit lectus odio tristique. Eget sed duis sem ut orci donec.
-                           Mauris orci cras urna ut non. Tristique sed vulputate mi arcu bibendum pellentesque amet faucibus arcu. Auctor amet, posuere scelerisque dignissim. Mi egestas curabitur pellentesque urna ultricies morbi vulputate. Aliquam morbi sed lectus nulla nunc posuere a. Ultrices dignissim scelerisque quam felis est. Tortor rhoncus netus velit non libero morbi donec urna. Aenean pharetra facilisis nunc et ultrices viverra viverra. Non sit at gravida aliquam accumsan, et. Aenean imperdiet aliquam ultricies id tempor quam.
-                      </p>
+                      <p class="mt-4">User experience is centred on the users. As UX designers, we don’t just go straight to design, we try to understand the users’ problems and find a solution for them. This process isn’t as straightforward as it sounds. UX design is iterative. It entails putting oneself in the position of the users.</p>
+                     
+                      <p class="mt-4 fw-bold">  5 key stages that form the UX design. They are:  </p>
 
-                      <p class="mt-4"> 
-                           Aliquet turpis dignissim id eu adipiscing eget amet ullamcorper. Et felis sapien eget cursus massa mauris netus. Vitae faucibus ac viverra viverra mauris sem urna, et. Vulputate morbi elit adipiscing vulputate. Sed nibh laoreet metus, posuere mauris dictum accumsan pellentesque. Mauris lectus hendrerit augue mattis mauris id fermentum. Lectus curabitur enim convallis suscipit ac blandit quis rutrum. Adipiscing suspendisse sed donec erat massa diam porttitor varius. Sit tempus consectetur nam tempor sed magna sit at. Sed nulla dis rutrum in est, ac a nibh egestas. Proin in ultrices nam ullamcorper massa tortor lectus. Vestibulum ut cras elementum, elit tellus vel. Praesent pharetra hac lorem elementum sit. Tellus sem rhoncus velit ac vulputate.
-                           Purus sem dui amet, tellus sed. Quam massa odio volutpat mauris ullamcorper dignissim lectus. Tempor neque egestas lectus neque. Platea ut sollicitudin arcu laoreet. Ornare adipiscing elit suscipit vivamus imperdiet metus, molestie. Et commodo nibh mauris duis ut gravida. Arcu sed at faucibus nec at phasellus netus nunc.
-                      </p>
+                      <ol>
+                        <li> Discover</li>
+                        <li>Describe and Define your concept</li>
+                        <li>Design the behaviour</li>
+                        <li>Develop your design</li>
+                        <li>Release your product.</li>
+                      </ol>
+
+                      <p class="mt-4">  For this part, we’d be talking about the first two:</p>
+                      
+                      <ol>
+                        <li><span class="fw-bold">Discover:</span> 
+                          <p>Learn more about your users. The best way to ensure success is to base your decisions around actual data from real users. Before creating a solution to a problem, UX designers discover who needs the product. They also discover other relevant products like the solution they want to create and what can be improved on it.</p>
+                          <p>This process entails researching the users, discovering other problems the users don’t know they have and creating a persona to understand the users. Personas make the design process less complex and help designers to achieve the goal of creating a good UX for the target users.</p>
+                        </li>
+                        <li><span class="fw-bold"> Describe Phase:</span>
+                          <p>This phase entails defining the main goals and requirements. The user research gathered will help you as a designer clearly define the goal of a product or website.</p>
+                            <p>Brainstorming also happens at this phase. You start to use your persona profile and feelings to frame questions that the product will solve.</p>
+                            <p>Here, you come up with different possibilities that will make you tweak or clarify your original concept, discover a different problem or a better opportunity entirely. The most important part of this phase is to be open-minded and think as broadly as you can about which different possibilities might meet all or part of your goals and that of the personas.</p>
+                            <p>Define your goals, brainstorm ideas and define your requirements. </p>
+                            <p>These steps are iterative. It is absolutely normal to go over the goals of the project and the user behaviour. The processes are as important as the product. It is imperative you go through them so as to keep the users at the centre of your design.</p>
+                        </li>
+                      </ol>
                   </div>
               </div>
               <div class="col-lg-4">
@@ -292,10 +313,10 @@
                               <p class="" style="font-size: 10px;">·</p>
                               <p class="" style="font-size: 10px;">5mins read</p>
                             </div>
-                            <h6 class="fw-bold" style="color: #042554;">The title of the article or heading should be here</h6>
-                              <a href="#" class="text-decoration-none"><div class="d-flex">
-                                <a href="article.html" class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</a> 
-                                <i class="bi bi-arrow-right m3-4 mb-3"></i>
+                            <h6 class="fw-bold" style="color: #042554;">Doing UX the Right Way (PART 2)</h6>
+                              <a href="article.html" class="text-decoration-none"><div class="d-flex">
+                                <h6 class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</h6> 
+                                <i class="fa-solid fa-arrow-right me-4 mb-3 pt-1 text-primary"></i>
                               </div></a>
                           </div>
                         </div>
@@ -316,10 +337,10 @@
                             <p class="" style="font-size: 10px;">·</p>
                             <p class="" style="font-size: 10px;">5mins read</p>
                           </div>
-                          <h6 class="fw-bold" style="color: #042554;">The title of the article or heading should be here</h6>
-                            <a href="#" class="text-decoration-none"><div class="d-flex">
-                              <a href="article.html" class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</a> 
-                              <i class="bi bi-arrow-right m3-4 mb-3"></i>
+                          <h6 class="fw-bold" style="color: #042554;">Understanding Design Thinking</h6>
+                            <a href="article.html" class="text-decoration-none"><div class="d-flex">
+                              <h6 class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</h6> 
+                              <i class="fa-solid fa-arrow-right me-4 mb-3 pt-1 text-primary"></i>
                             </div></a>
                         </div>
                       </div>
@@ -340,10 +361,10 @@
                             <p class="" style="font-size: 10px;">·</p>
                             <p class="" style="font-size: 10px;">5mins read</p>
                           </div>
-                          <h6 class="fw-bold" style="color: #042554;">The title of the article or heading should be here</h6>
-                            <a href="#" class="text-decoration-none"><div class="d-flex">
-                              <a href="article.html" class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</a> 
-                              <i class="bi bi-arrow-right m3-4 mb-3"></i>
+                          <h6 class="fw-bold" style="color: #042554;">Empathy in Ux Design</h6>
+                            <a href="article.html" class="text-decoration-none"><div class="d-flex">
+                              <h6 class=" nav-link text-primary me-2 pt-1" style="font-size: 12px;">Read more</h6> 
+                              <i class="fa-solid fa-arrow-right me-4 mb-3 pt-1 text-primary"></i>
                             </div></a>
                         </div>
                       </div>
@@ -358,36 +379,36 @@
                       <div >
                           <h3 class="fw-bold my-3">Tags</h3>
                         <div class="d-flex flex-wrap justify-content-between align-items-center">
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
-                          <button class="btn btn-success p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#UI/UX</button>
-                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3" style="font-size: 13px;">#Figma</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80;;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#UI/UX</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80;">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE;">#Figma</button>
+                          <button class="btn btn-success p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #B3CF80">#UI/UX</button>
+                          <button class="btn btn-primary p-1 px-2 my-1 rounded-3 border-0 mx-1" style="font-size: 13px; color: #CFE2FF; background: #5E9EFE">#Figma</button>
                         </div>
                    </div>
               </div>
@@ -670,8 +691,10 @@
                         <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="index.html" class="text-light text-decoration-none">Home</a></li>
                         <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
                         <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#tech" class="text-light text-decoration-none">Tech and Lifestyles</a></li>
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="#business" class="text-light text-decoration-none">Business</a></li>
-                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="trending.html" class="text-light text-decoration-none">Trending</a></li>
+                        <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="privacy.html"
+                          class="text-light text-decoration-none">Privacy Settings</a></li>
+                      <li class="list-group-item text-light bg-transparent border-0 ps-0"><a href="terms-and-conditions.html"
+                          class="text-light text-decoration-none">Terms and Condition</a></li>
                     </ul>
                 </div>
             </div>
@@ -708,8 +731,8 @@
   <!-- End of Footer -->
 
   <!-- Start of Scripts -->
-  <!-- <script src="js/app.js"></script> -->
   <script src="js/article.js"></script>
+  <script src="js/app.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
 </body>

@@ -48,71 +48,486 @@ document.addEventListener("keydown", function (e) {
 const notifArray = [
   {
     item: `<div class="notification-container" id="toggle-notif">
-            <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
-              <div class="col-2 m-0 bg-transparent">
-                <div class="card border-0 bg-transparent">
-                  <img src="img/trending-page-image/logo-2.png" alt="">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                  <p class="m-0 fw-bold" style="font-size: 10px;">KodeCamp responded to your comment “Tech....</p>
+                  <p class="text-muted m-0" style="font-size: 8px;">2 hours ago</p>
+                  </div>
+                  </div>
+                  <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons" id="toggle-icons" >
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
                 </div>
               </div>
-              <div class="col-8 m-0 bg-transparent">
-                <div class="card border-0 bg-transparent">
-                  <p class="m-0 fw-bold" style="font-size: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscimn dolor sit</p>
-                  <p class="text-muted m-0" style="font-size: 8px;">5 hours ago</p>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;" dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
                 </div>
               </div>
-              <div class="col-2 m-0 bg-transparent">
-                <div class="card border-0 bg-transparent">
-                  <i class="fa-solid fa-ellipsis info-toggle"></i>
-                </div>
-              </div>
-            </div>
-            <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
-              <div class="delete-btn d-flex align-items-center">
-                <i class="fa-solid fa-trash-can"></i>
-                <div class="delete-text p-2">
-                  <span class="delete-head">Remove</span>
-                  <div class="head-text">Remove this notification</div>
-                </div>
-              </div>
-              <div class="mute-btn d-flex align-items-center">
-                <i class="fa-solid fa-volume-xmark"></i>
-                <div class="mute-text p-2">
-                  <span class="mute-head">Mute</span>
-                  <div class="head-text">Mute this notification</div>
-                </div>
-              </div>
-            </div>
-          </div>`,
+            </div>`,
   },
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
+  {
+    item: `<div class="notification-container" id="toggle-notif">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <p class="m-0 fw-bold" style="font-size: 10px;">David Freeman liked your comment “Tech....</p>
+                    <p class="text-muted m-0" style="font-size: 8px;">2 hours 32 mins ago</p>
+                  </div>
+                </div>
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons">
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
+                </div>
+              </div>
+            </div>`,
+  },
+  {
+    item: `<div class="notification-container" id="toggle-notif">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <p class="m-0 fw-bold" style="font-size: 10px;">KodeCamp updated their article on “Doing UX....</p>
+                    <p class="text-muted m-0" style="font-size: 8px;">3 hours 40 mins ago</p>
+                  </div>
+                </div>
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons">
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
+                </div>
+              </div>
+            </div>`,
+  },
+  {
+    item: `<div class="notification-container" id="toggle-notif">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <p class="m-0 fw-bold" style="font-size: 10px;">Check out notifications you missed on Program..</p>
+                    <p class="text-muted m-0" style="font-size: 8px;">3 hours 56 mins ago</p>
+                  </div>
+                </div>
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons">
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
+                </div>
+              </div>
+            </div>`,
+  },
+  {
+    item: `<div class="notification-container" id="toggle-notif">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <p class="m-0 fw-bold" style="font-size: 10px;">KodeCamp liked your comment “Wow, this is.....</p>
+                    <p class="text-muted m-0" style="font-size: 8px;">4 hours 2 mins ago</p>
+                  </div>
+                </div>
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons">
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
+                </div>
+              </div>
+            </div>`,
+  },
+  {
+    item: `<div class="notification-container" id="toggle-notif">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <p class="m-0 fw-bold" style="font-size: 10px;">Check out new article on Web3</p>
+                    <p class="text-muted m-0" style="font-size: 8px;">4 hours 3 mins ago</p>
+                  </div>
+                </div>
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons">
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
+                </div>
+              </div>
+            </div>`,
+  },
+  {
+    item: `<div class="notification-container" id="toggle-notif">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <p class="m-0 fw-bold" style="font-size: 10px;">Dangerman responded to your comment “Tech..</p>
+                    <p class="text-muted m-0" style="font-size: 8px;">4 hours 15 mins ago</p>
+                  </div>
+                </div>
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons">
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
+                </div>
+              </div>
+            </div>`,
+  },
+  {
+    item: `<div class="notification-container" id="toggle-notif">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <p class="m-0 fw-bold" style="font-size: 10px;">KodeCamp liked your comment “Tech is the........</p>
+                    <p class="text-muted m-0" style="font-size: 8px;">4 hours 45 mins ago</p>
+                  </div>
+                </div>
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons">
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
+                </div>
+              </div>
+            </div>`,
+  },
+  {
+    item: `<div class="notification-container" id="toggle-notif">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <p class="m-0 fw-bold" style="font-size: 10px;">KodeCamp updated their article on “Doing UX....</p>
+                    <p class="text-muted m-0" style="font-size: 8px;">5 hours 7 mins ago</p>
+                  </div>
+                </div>
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons">
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
+                </div>
+              </div>
+            </div>`,
+  },
+  {
+    item: `<div class="notification-container" id="toggle-notif">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <p class="m-0 fw-bold" style="font-size: 10px;">KodeCamp liked your comment “Wow, this is.....</p>
+                    <p class="text-muted m-0" style="font-size: 8px;">5 hours 23 mins ago</p>
+                  </div>
+                </div>
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons">
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
+                </div>
+              </div>
+            </div>`,
+  },
+  {
+    item: `<div class="notification-container" id="toggle-notif">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <p class="m-0 fw-bold" style="font-size: 10px;">David Freeman liked your comment “Tech....</p>
+                    <p class="text-muted m-0" style="font-size: 8px;">5 hours 50 mins ago</p>
+                  </div>
+                </div>
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons">
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
+                </div>
+              </div>
+            </div>`,
+  },
+  {
+    item: `<div class="notification-container" id="toggle-notif">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <p class="m-0 fw-bold" style="font-size: 10px;">KodeCamp responded to your comment “Tech....</p>
+                    <p class="text-muted m-0" style="font-size: 8px;">5 hours 52 mins ago</p>
+                  </div>
+                </div>
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons">
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
+                </div>
+              </div>
+            </div>`,
+  },
+  {
+    item: `<div class="notification-container" id="toggle-notif">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <p class="m-0 fw-bold" style="font-size: 10px;">Check out new article on Web3</p>
+                    <p class="text-muted m-0" style="font-size: 8px;">6 hours ago</p>
+                  </div>
+                </div>
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons">
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
+                </div>
+              </div>
+            </div>`,
+  },
+  {
+    item: `<div class="notification-container" id="toggle-notif">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <p class="m-0 fw-bold" style="font-size: 10px;">KodeCamp liked your comment “Tech is the........</p>
+                    <p class="text-muted m-0" style="font-size: 8px;">6 hours 22 mins ago</p>
+                  </div>
+                </div>
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons">
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
+                </div>
+              </div>
+            </div>`,
+  },
+  {
+    item: `<div class="notification-container" id="toggle-notif">
+              <div class="row info cleeck my-2 w-100 mx-auto align-items-center py-1 rounded-2" id="notclick">
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <img src="img/landing-page-image/logo-2.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
+                    <p class="m-0 fw-bold" style="font-size: 10px;">Dangerman responded to your comment “Tech..</p>
+                    <p class="text-muted m-0" style="font-size: 8px;">6 hours 34 mins ago</p>
+                  </div>
+                </div>
+                <div class="col-2 m-0 bg-transparent">
+                  <div class="card border-0 bg-transparent notif-icons">
+                    <i class="mute-notif fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-ellipsis info-toggle"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="notif-menu hidden-notify px-2 shadow" style="background-color: white;"dataset="toggle-notif">
+                <div class="delete-btn d-flex align-items-center">
+                  <i class="fa-solid fa-trash-can"></i>
+                  <div class="delete-text p-2">
+                    <span class="delete-head">Remove</span>
+                    <div class="head-text">Remove this notification</div>
+                  </div>
+                </div>
+              </div>
+            </div>`,
+  },
 ];
-
-let data = notifArray[0];
-notifArray.fill(data, 1, 26);
 
 const notification = document.querySelector(".notification-details");
 let element = "";
@@ -155,6 +570,33 @@ function deleteFunc() {
 }
 
 deleteFunc();
+
+const muteBtn = document.querySelector(".mute");
+const unmuteBtn = document.querySelector(".unmute");
+let muteIcons = document.querySelectorAll(".mute-notif");
+
+function muteFunc() {
+  muteBtn.addEventListener("click", () => {
+    muteIcons.forEach((e) => {
+      e.classList.add("show-mute");
+      e.classList.remove("mute-notif");
+    });
+    muteBtn.style.display = "none";
+    unmuteBtn.style.display = "block";
+  });
+
+  unmuteBtn.addEventListener("click", () => {
+    muteIcons.forEach((e) => {
+      e.classList.remove("show-mute");
+      e.classList.add("mute-notif");
+    });
+    muteBtn.style.display = "block";
+    unmuteBtn.style.display = "none";
+  });
+}
+muteFunc();
+
+
 
 let sideDrop = document.querySelector(".sidedrop");
 let sideListItems = document.querySelector(".side-list-item");
@@ -230,3 +672,13 @@ function copy() {
 }
 
 button.addEventListener("click", copy);
+
+ /////////CREATE DATE AND TIME
+ const now = new Date();
+ const date = `${now.getDate()}`.padStart(2, 0);
+ const month = `${now.getMonth() + 1}`.padStart(2, 0);
+ const year = now.getFullYear();
+ const hour = `${now.getHours()}`.padStart(2, 0);
+ const min = `${now.getMinutes()}`.padStart(2, 0);
+ labelDate.textContent = `${date}/${month}/${year}, ${hour}:${min}`;
+ /// date/ month / year 
