@@ -596,8 +596,6 @@ function muteFunc() {
 }
 muteFunc();
 
-
-
 let sideDrop = document.querySelector(".sidedrop");
 let sideListItems = document.querySelector(".side-list-item");
 
@@ -673,12 +671,15 @@ function copy() {
 
 button.addEventListener("click", copy);
 
- /////////CREATE DATE AND TIME
- const now = new Date();
- const date = `${now.getDate()}`.padStart(2, 0);
- const month = `${now.getMonth() + 1}`.padStart(2, 0);
- const year = now.getFullYear();
- const hour = `${now.getHours()}`.padStart(2, 0);
- const min = `${now.getMinutes()}`.padStart(2, 0);
- labelDate.textContent = `${date}/${month}/${year}, ${hour}:${min}`;
- /// date/ month / year 
+/////////CREATE DATE AND TIME
+const labelDate = [...document.querySelectorAll(".date-now")];
+const now = new Date();
+const date = `${now.getDate()}`.padStart(2, 0);
+const month = `${now.toLocaleString("en-us", { month: "short" })}`;
+const year = now.getFullYear();
+
+console.log(now);
+labelDate.forEach(
+  (day) => (day.textContent = `${month} ${date}, ${year} . 5mins read`)
+);
+/// date/ month / year
