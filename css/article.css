@@ -90,11 +90,11 @@ body {
     width: 100%;
 }
 
-.input:focus::placeholder {
+/* .input:focus::placeholder {
     color: white !important;
-}
+} */
 
-.input:focus {
+/* .input:focus {
     background-color: var(--primary);
     color: white;
 } 
@@ -102,11 +102,11 @@ body {
 input:focus {
     background-color: var(--primary);
     color: white;
-}
+} */
 
-input:focus::placeholder {
+/* input:focus::placeholder {
     color: white !important;
-}
+} */
 
 input::placeholder {
     color: black !important;
